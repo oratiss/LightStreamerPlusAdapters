@@ -1,0 +1,466 @@
+HOW TO UPGRADE LIGHTSTREAMER
+============================
+
+First of all, please see CHANGELOG.HTML to know all the differences from
+the previous versions of the Lightstreamer Server components.
+
+
+------------------------------------
+Upgrading from 7.1.2 to This Version
+------------------------------------
+
+If you have an existing installation of Lightstreamer 7.1.2,
+then this new release brings various improvements and a few bug fixes
+in the Server and related SDKs (ARI, JMX, TLCP) and the MPN Module.
+In particular, the Adapter Remoting Infrastructure is now fully embedded
+in the Server and it is no longer versioned separately. Hence the
+Remote Adapter SDKs now must express their compatibility with respect
+to the Server version directly.
+
+However, the Server improvements also involve a change in many
+of the deployed third-party libraries.
+So, we suggest you to do a fresh install of Lightstreamer 7.2.0, then:
+
+- CONFIGURATION:
+  The configuration files under the "conf" folder
+  (e.g. lightstreamer_conf.xml, lightstreamer_log_conf.xml) can be copied
+  in the new installation unchanged, but for a few corner cases.
+  To prevent these cases and to take advantage of new configuration
+  opportunities, we suggest you to rather take note of any changes you
+  performed and apply them to the new factory files.
+  For lightstreamer_conf.xml and lightstreamer_log_conf.xml, you can
+  also use the online Configuration File Upgrade Tool, available at:
+  https://service.lightstreamer.com/ConfigUpgrade
+
+  As for the configuration files under the "conf/mpn" folder, you can
+  copy them unchanged in the new installation. However, if you had to
+  customize the "Device.hbm.xml" file, then you should rather take note
+  of the changes you performed and apply them to the new factory file.
+
+  On the other hand, if you have changed the launch scripts under "bin"
+  (e.g. LS.sh, LS.bat), take note of any changes you performed and apply
+  them to the new factory files.
+
+  Also consider that if you run the Server with a license of "file" type,
+  a license upgrade may be needed.
+
+- ADAPTERS:
+  The Server upgrade to 7.2.0 is still associated with SDK for Java
+  In-Process Adapters version 7.3.0, whereas the embedded Adapter
+  Remoting Infrastructure has moved to ARI Protocol version 1.8.3,
+  but with backward compatibility.
+  So, you can deploy your existing Adapter binaries unchanged, in regard
+  to both Java In-Process and Remote Adapters.
+
+  However, if you use Remote Adapters, your adapters.xml files should
+  be revised according with the Server CHANGELOG. To simplify the
+  operation, we suggest you using the online Configuration File
+  Upgrade Tool; it is available at:
+  https://service.lightstreamer.com/ConfigUpgrade
+
+  Note that all the Remote Adapter SDKs have changed recently. On the
+  download page you can find the current versions of the SDKs.
+  In order to upgrade the adapters, read carefully through the CHANGELOG
+  of the involved SDKs to learn about any possible compatibility issues.
+
+- CLIENTS:
+  The Server is compatible with all client libraries available at the time
+  of release and with all previous client libraries, so your existing
+  clients should work with no issues.
+
+  Some of the client SDKs may have changed recently. On the download page
+  you can find the current versions of the SDKs.
+  In order to upgrade the clients, read carefully through the CHANGELOG
+  of the involved SDKs to learn about any possible compatibility issues.
+
+  The Server upgrade to 7.2.0 also implies the upgrade of the SDK for
+  JMX Extensions to version 5.6.0, with only a few changes and extensions,
+  but see the CHANGELOG of the JMX SDK, that you can find on the download
+  page, to learn about any possible compatibility issues.
+
+- MPN MODULE DATABASE (where available):
+  If leveraging the MPN module, you can deploy your existing database
+  unchanged on the new installation.
+
+---------------------------------------------------
+Upgrading from 7.1.1 build 20200527 to This Version
+---------------------------------------------------
+
+If you have an existing installation of Lightstreamer 7.1.1 build 20200527,
+then this new release brings various improvements and a few bug fixes
+in the Server and related SDKs (ARI, JMX, TLCP) and the MPN Module.
+In particular, the Adapter Remoting Infrastructure is now fully embedded
+in the Server and it is no longer versioned separately. Hence the
+Remote Adapter SDKs now must express their compatibility with respect
+to the Server version directly.
+
+More significantly, the new release no longer includes the resources
+of the various SDKs in the distribution package. Now Client and Adapter
+SDKs evolve independently and their resources, including the CHANGELOG,
+can only be reached directly from the download page.
+Moreover, the Server improvements also involve a change in many
+of the deployed third-party libraries.
+So, we suggest you to do a fresh install of Lightstreamer 7.2.0, then:
+
+- CONFIGURATION:
+  The configuration files under the "conf" folder
+  (e.g. lightstreamer_conf.xml, lightstreamer_log_conf.xml) can be copied
+  in the new installation unchanged, but for a few corner cases.
+  To prevent these cases and to take advantage of new configuration
+  opportunities, we suggest you to rather take note of any changes you
+  performed and apply them to the new factory files.
+  For lightstreamer_conf.xml and lightstreamer_log_conf.xml, you can
+  also use the online Configuration File Upgrade Tool, available at:
+  https://service.lightstreamer.com/ConfigUpgrade
+
+  As for the configuration files under the "conf/mpn" folder, you can
+  copy them unchanged in the new installation. However, if you had to
+  customize the "Device.hbm.xml" file, then you should rather take note
+  of the changes you performed and apply them to the new factory file.
+
+  On the other hand, if you have changed the launch scripts under "bin"
+  (e.g. LS.sh, LS.bat), take note of any changes you performed and apply
+  them to the new factory files.
+
+  Also consider that if you run the Server with a license of "file" type,
+  a license upgrade may be needed.
+
+- ADAPTERS:
+  The Server upgrade to 7.2.0 also implies the upgrade of the SDK for
+  Java In-Process Adapters to version 7.3.0, with no significant changes,
+  whereas the embedded Adapter Remoting Infrastructure has moved to ARI
+  Protocol version 1.8.3, but with backward compatibility.
+  So, you can deploy your existing Adapter binaries unchanged, in regard
+  to both Java In-Process and Remote Adapters.
+
+  However, if you use Remote Adapters, your adapters.xml files should
+  be revised according with the Server CHANGELOG. To simplify the
+  operation, we suggest you using the online Configuration File
+  Upgrade Tool; it is available at:
+  https://service.lightstreamer.com/ConfigUpgrade
+
+  Note that all the Remote Adapter SDKs have changed recently. On the
+  download page you can find the current versions of the SDKs.
+  In order to upgrade the adapters, read carefully through the CHANGELOG
+  of the involved SDKs to learn about any possible compatibility issues.
+
+- CLIENTS:
+  The Server is compatible with all client libraries available at the time
+  of release and with all previous client libraries, so your existing
+  clients should work with no issues.
+
+  Some of the client SDKs may have changed recently. On the download page
+  you can find the current versions of the SDKs.
+  In order to upgrade the clients, read carefully through the CHANGELOG
+  of the involved SDKs to learn about any possible compatibility issues.
+
+  The Server upgrade to 7.2.0 also implies the upgrade of the SDK for
+  JMX Extensions to version 5.6.0, with only a few changes and extensions,
+  but see the CHANGELOG of the JMX SDK, that you can find on the download
+  page, to learn about any possible compatibility issues.
+
+- MPN MODULE DATABASE (where available):
+  If leveraging the MPN module, you can deploy your existing database
+  unchanged on the new installation.
+
+---------------------------------------------------
+Upgrading from 7.1.0 build 20200124 to This Version
+---------------------------------------------------
+
+If you have an existing installation of Lightstreamer 7.1.0 build 20200124,
+then this new release brings various improvements and a few bug fixes
+in the Server and related SDKs (ARI, JMX, TLCP) and the MPN Module.
+In particular, the Adapter Remoting Infrastructure is now fully embedded
+in the Server and it is no longer versioned separately. Hence the
+Remote Adapter SDKs now must express their compatibility with respect
+to the Server version directly.
+
+More significantly, the new release no longer includes the resources
+of the various SDKs in the distribution package. Now Client and Adapter
+SDKs evolve independently and their resources, including the CHANGELOG,
+can only be reached directly from the download page.
+Moreover, the Server improvements also involve new deployed third-party
+libraries and changes in many others.
+So, we suggest you to do a fresh install of Lightstreamer 7.2.0, then:
+
+- CONFIGURATION:
+  The configuration files under the "conf" folder
+  (e.g. lightstreamer_conf.xml, lightstreamer_log_conf.xml) can be copied
+  in the new installation unchanged, but for a few corner cases.
+  To prevent these cases and to take advantage of new configuration
+  opportunities, we suggest you to rather take note of any changes you
+  performed and apply them to the new factory files.
+  For lightstreamer_conf.xml and lightstreamer_log_conf.xml, you can
+  also use the online Configuration File Upgrade Tool, available at:
+  https://service.lightstreamer.com/ConfigUpgrade
+
+  As for the configuration files under the "conf/mpn" folder, you can
+  copy them unchanged in the new installation. However, if you had to
+  customize the "Device.hbm.xml" file, then you should rather take note
+  of the changes you performed and apply them to the new factory file.
+
+  On the other hand, if you have changed the launch scripts under "bin"
+  (e.g. LS.sh, LS.bat), take note of any changes you performed and apply
+  them to the new factory files.
+
+  Also consider that if you run the Server with a license of "file" type,
+  a license upgrade may be needed.
+
+- ADAPTERS:
+  The Server upgrade to 7.2.0 also implies the upgrade of the SDK for
+  Java In-Process Adapters to version 7.3.0, with no significant changes,
+  whereas the embedded Adapter Remoting Infrastructure has moved to ARI
+  Protocol version 1.8.3, but with backward compatibility.
+  So, you can deploy your existing Adapter binaries unchanged, in regard
+  to both Java In-Process and Remote Adapters.
+
+  However, if you use Remote Adapters, your adapters.xml files should
+  be revised according with the Server CHANGELOG. To simplify the
+  operation, we suggest you using the online Configuration File
+  Upgrade Tool; it is available at:
+  https://service.lightstreamer.com/ConfigUpgrade
+
+  Note that all the Remote Adapter SDKs have changed recently. On the
+  download page you can find the current versions of the SDKs.
+  In order to upgrade the adapters, read carefully through the CHANGELOG
+  of the involved SDKs to learn about any possible compatibility issues.
+
+- CLIENTS:
+  The Server is compatible with all client libraries available at the time
+  of release and with all previous client libraries, so your existing
+  clients should work with no issues.
+
+  Some of the client SDKs may have changed recently. On the download page
+  you can find the current versions of the SDKs.
+  In order to upgrade the clients, read carefully through the CHANGELOG
+  of the involved SDKs to learn about any possible compatibility issues.
+
+  The Server upgrade to 7.2.0 also implies the upgrade of the SDK for
+  JMX Extensions to version 5.6.0, with only a few changes and extensions,
+  but see the CHANGELOG of the JMX SDK, that you can find on the download
+  page, to learn about any possible compatibility issues.
+
+- MPN MODULE DATABASE (where available):
+  If leveraging the MPN module, you can deploy your existing database
+  unchanged on the new installation.
+
+---------------------------------------------------
+Upgrading from 7.0.3 build 20190107 to This Version
+Upgrading from 7.0.2 build 20181003 to This Version
+Upgrading from 7.0.1 build 20180614 to This Version
+Upgrading from 7.0.0 build 20180228 to This Version
+---------------------------------------------------
+
+If you have an existing installation of Lightstreamer 7.0.0 build 20180228
+through 7.0.3 build 20190107, then this new release brings various
+improvements and bug fixes in the Server and related SDKs (ARI, JMX, TLCP).
+In particular, the Adapter Remoting Infrastructure is now fully embedded
+in the Server and it is no longer versioned separately. Hence the
+Remote Adapter SDKs now must express their compatibility with respect
+to the Server version directly.
+
+More significantly, the new release no longer includes the resources
+of the various SDKs in the distribution package. Now Client and Adapter
+SDKs evolve independently and their resources, including the CHANGELOG,
+can only be reached directly from the download page.
+The release also brings an upgrade of the Server's MPN Module implementation.
+Moreover, the Server improvements also involve new deployed third-party
+libraries and changes in many others.
+So, we suggest you to do a fresh install of Lightstreamer 7.2.0, then:
+
+- CONFIGURATION:
+  The configuration files under the "conf" folder
+  (e.g. lightstreamer_conf.xml, lightstreamer_log_conf.xml) can be copied
+  in the new installation unchanged, but for a few corner cases.
+  To prevent these cases and to take advantage of new configuration
+  opportunities, we suggest you to rather take note of any changes you
+  performed and apply them to the new factory files.
+  For lightstreamer_conf.xml and lightstreamer_log_conf.xml, a better option
+  is to use the online Configuration File Upgrade Tool, available at:
+  https://service.lightstreamer.com/ConfigUpgrade
+
+  If you are leveraging the MPN Module, the MPN related configuration files
+  under the "conf/mpn" folder should be ported manually according with
+  the Server CHANGELOG.
+
+  If you are leveraging the possibility to define custom extensions to the
+  logging subsystem, the deployment of such extensions may need to be modified
+  according with the Server CHANGELOG.
+
+  On the other hand, if you have changed the launch scripts under "bin"
+  (e.g. LS.sh, LS.bat), take note of any changes you performed and apply
+  them to the new factory files.
+
+  Also consider that if you run the Server with a license of "file" type,
+  a license upgrade may be needed.
+
+- ADAPTERS:
+  The Server upgrade to 7.2.0 also implies the upgrade of the SDK for
+  Java In-Process Adapters to version 7.3.0,
+  whereas the embedded Adapter Remoting Infrastructure has moved to ARI
+  Protocol version 1.8.3, but with backward compatibility.
+
+  You should be able to deploy your existing Adapter binaries unchanged,
+  but first check for possible corner cases in the CHANGELOG of the
+  Java In-Process Adapter SDK (or in the Sever CHANGELOG for Remote
+  Adapters).
+
+  However, if you use Remote Adapters, your adapters.xml files should
+  also be revised according with the Server CHANGELOG. To simplify the
+  operation, we suggest you using the online Configuration File
+  Upgrade Tool; it is available at:
+  https://service.lightstreamer.com/ConfigUpgrade
+
+  Note that the Remote Adapter SDKs have changed significantly. On the
+  download page you can find the currently available SDKs and their
+  versions.
+  In order to upgrade the In-Process and Remote Adapters to newer SDK
+  versions, read carefully through the CHANGELOG of the involved SDKs
+  to learn about any possible compatibility issues.
+
+- CLIENTS:
+  The Server is compatible with all client libraries available at the time
+  of release and with all previous client libraries, so your existing
+  clients should work with no issues.
+  The only exception regards Android clients leveraging the MPN support;
+  see paragraph "Special Considerations on the GCM to FCM Transition" in the
+  General Concepts document for clarifications.
+
+  Note that the Client SDKs have changed significantly. On the download
+  page you can find the currently available SDKs and their versions.
+  In order to upgrade the Clients to newer SDK versions, read carefully
+  through the CHANGELOG of the involved SDKs to learn about any possible
+  compatibility issues. In particular, if you run the Server with a license
+  of "file" type, a license upgrade may be needed.
+
+  The Server upgrade to 7.2.0 also implies the upgrade of the SDK for
+  JMX Extensions to version 5.6.0, with various changes and extensions;
+  see the CHANGELOG of the JMX SDK, that you can find on the download
+  page, to learn about any possible compatibility issues.
+
+- MPN MODULE DATABASE (where available):
+  If leveraging the MPN module, and the GCM service in particular, then the
+  database contents should be migrated when ported to the new Server.
+  To achieve that, please contact Lightstreamer support for instructions.
+
+---------------------------------------------------
+Upgrading from 6.1.0 build 20170123 to This Version
+---------------------------------------------------
+
+If you have an existing installation of Lightstreamer 6.1.0 build 20170123,
+then this new release brings a brand new licensing mechanism, a wholly
+revised MPN module and various improvements and bug fixes in the Server
+and related SDKs (ARI, JMX, TLCP).
+In particular, the Adapter Remoting Infrastructure is now fully embedded
+in the Server and it is no longer versioned separately. Hence the
+Remote Adapter SDKs now must express their compatibility with respect
+to the Server version directly.
+
+More significantly, the new release no longer includes the resources
+of the various SDKs in the distribution package. Now Client and Adapter
+SDKs evolve independently and their resources, including the CHANGELOG,
+can only be reached directly from the download page.
+Moreover, the Server improvements also involve new deployed third-party
+libraries and changes in many others.
+
+However, if you have an existing installation of Lightstreamer Moderato 6.1.0
+build 20170123 and are upgrading to this release by leveraging the Community
+edition, then the new release also brings the support for many client SDKs;
+all the SDKs shown in the download page are now available, although only
+one of which can be activated. It also brings several features that
+previously were hidden, but that are still unavailable.
+
+So, we suggest you to do a fresh install of Lightstreamer 7.2.0, then:
+
+- CONFIGURATION:
+  The lightstreamer_version_conf.xml file was replaced by the brand
+  new lightstreamer_edition_conf.xml.
+  Since license configuration was totally revised, you need to pass through
+  the new file to configure properly the Lightstreamer Edition and License
+  Type, according with your current contractual terms.
+  Moreover, any changes you performed in lightstreamer_version_conf.xml
+  to the <proxy> block and the <audit_log_path>, <automatic_update_check>,
+  and <automatic_audit_upload> elements should also be applied to
+  lightstreamer_edition_conf.xml.
+
+  Take note of the changes you performed on the other configuration files under
+  the "conf" folder (e.g. lightstreamer_conf.xml, lightstreamer_log_conf.xml)
+  and apply your changes to the new factory configuration files.
+  Do the same for the launch scripts under "bin" (e.g. LS.sh, LS.bat).
+  For lightstreamer_conf.xml and lightstreamer_log_conf.xml, this may not be
+  easy, so we suggest you using the online Configuration File Upgrade Tool;
+  it is available at:
+  https://service.lightstreamer.com/ConfigUpgrade
+
+  However, if you are leveraging the MPN module, hence
+  you have modified the <mpn> block in lightstreamer_conf.xml and the files
+  under "conf/mpn", please contact Lightstreamer support for further
+  instructions.
+
+  If you are leveraging the possibility to define custom extensions to the
+  logging subsystem, the deployment of such extensions may need to be modified
+  according with the Server CHANGELOG.
+
+- ADAPTERS:
+  The Server upgrade to 7.2.0 also implies the upgrade of the SDK for
+  Java In-Process Adapters to version 7.3.0,
+  whereas the embedded Adapter Remoting Infrastructure has moved to ARI
+  Protocol version 1.8.3, with some breaking changes.
+
+  Your adapters.xml files should be revised according with the CHANGELOG
+  of the Java In-Process Adapter SDK (or the Sever CHANGELOG for Remote
+  Adapters). To simplify the operation, we suggest you using the online
+  Configuration File Upgrade Tool; it is available at:
+  https://service.lightstreamer.com/ConfigUpgrade
+
+  After that, and unless the MPN module is involved, you should be able
+  to deploy your existing Adapter binaries unchanged, but first check for
+  possible corner cases in the CHANGELOG of the Java In-Process Adapter SDK
+  (or in the Sever CHANGELOG for Remote Adapters).
+  If leveraging the MPN module, please read carefully through the relevant
+  CHANGELOG for all the details changed.
+
+  Note that the Remote Adapter SDKs have changed significantly. On the
+  download page you can find the currently available SDKs and their
+  versions.
+  In order to upgrade the In-Process and Remote Adapters to newer SDK
+  versions, read carefully through the CHANGELOG of the involved SDKs
+  to learn about any possible compatibility issues.
+
+- CLIENTS:
+  The Server is compatible with all client libraries available at the time
+  of release and with all previous client libraries, so your existing
+  clients should work with no issues.
+  However, if leveraging the MPN module (possible with some
+  old client SDKs), consider that the support for Push Notifications on such
+  old clients has been dropped and all client requests will be refused by the
+  new Server. In that case, a porting to the newest client SDK will be needed.
+
+  Note that the Client SDKs have changed significantly. On the download
+  page you can find the currently available SDKs and their versions.
+  In order to upgrade the Clients to newer SDK versions, read carefully through
+  the CHANGELOG of the involved SDKs to learn about any possible compatibility
+  issues and if you need to recompile your code. In particular, if you run the
+  Server with a license of "file" type, a license upgrade may be needed.
+
+  The Server upgrade to 7.2.0 also implies the upgrade of the SDK for
+  JMX Extensions to version 5.6.0, with various changes and extensions;
+  see the CHANGELOG of the JMX SDK, that you can find on the download
+  page, to learn about any possible compatibility issues.
+
+- MPN MODULE DATABASE (where available):
+  If leveraging the MPN module, the database should be migrated when ported
+  to the new Server. To achieve that, please contact Lightstreamer support
+  for instructions.
+
+-----------------------------------------------------------------
+Upgrading from all Previous Versions (before 6.1) to This Version
+-----------------------------------------------------------------
+
+Port your installation to version 6.1.0 first, by downloading the 6.1.0
+package and following the provided upgrade instructions. Then you can proceed
+by referring to the instructions for 6.1.0 above.
+
+Note that, if you have an existing installation of Lightstreamer Moderato
+and are upgrading to this release by leveraging the Community edition,
+then in the first step you should upgrade to Lightstreamer Moderato 6.1.0.

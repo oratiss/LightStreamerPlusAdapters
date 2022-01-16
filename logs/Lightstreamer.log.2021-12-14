@@ -1,0 +1,63 @@
+14-Dec-21 14:42:45,082|INFO |L.init             |main                       |Lightstreamer Server 7.2.0 build 2001
+14-Dec-21 14:42:45,091|INFO |L.init             |main                       |Server launched on Java Virtual Machine: Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 25.311-b11, 1.8.0_311-b11 on Windows 10
+14-Dec-21 14:42:45,122|INFO |L.license          |main                       |License correctly bound with the following parameter(s):
+14-Dec-21 14:42:45,123|INFO |L.license          |main                       |        Product                          : LS-SERVER
+14-Dec-21 14:42:45,123|INFO |L.license          |main                       |        Edition                          : ENTERPRISE
+14-Dec-21 14:42:45,124|INFO |L.license          |main                       |        License Type                     : DEMO
+14-Dec-21 14:42:45,124|INFO |L.license          |main                       |        Contract Id                      : DEMO
+14-Dec-21 14:42:45,124|INFO |L.init             |main                       |        Mobile Push Notifications        : enabled
+14-Dec-21 14:42:45,124|INFO |L.init             |main                       |        Max Message Rate (Downstream)    : unlimited
+14-Dec-21 14:42:45,125|INFO |L.init             |main                       |        JMX Management API               : enabled
+14-Dec-21 14:42:45,125|INFO |L.init             |main                       |        Bandwidth Control                : enabled
+14-Dec-21 14:42:45,125|INFO |L.init             |main                       |        TLS/SSL Support                  : enabled
+14-Dec-21 14:42:45,125|INFO |L.init             |main                       |        Web Client API                   : enabled (all versions)
+14-Dec-21 14:42:45,125|INFO |L.init             |main                       |        Android Client API               : enabled (all versions)
+14-Dec-21 14:42:45,126|INFO |L.init             |main                       |        iOS Client API                   : enabled (all versions)
+14-Dec-21 14:42:45,126|INFO |L.init             |main                       |        Java SE Client API               : enabled (all versions)
+14-Dec-21 14:42:45,126|INFO |L.init             |main                       |        .NET Standard Client API         : enabled (all versions)
+14-Dec-21 14:42:45,126|INFO |L.init             |main                       |        Node.js Client API               : enabled (all versions)
+14-Dec-21 14:42:45,127|INFO |L.init             |main                       |        macOS Client API                 : enabled (all versions)
+14-Dec-21 14:42:45,127|INFO |L.init             |main                       |        tvOS Client API                  : enabled (all versions)
+14-Dec-21 14:42:45,127|INFO |L.init             |main                       |        watchOS Client API               : enabled (all versions)
+14-Dec-21 14:42:45,127|INFO |L.init             |main                       |        Generic Clients (TLCP Protocol)  : enabled (all versions)
+14-Dec-21 14:42:45,128|INFO |L.init             |main                       |        [Legacy] BlackBerry Client API   : enabled (all versions)
+14-Dec-21 14:42:45,128|INFO |L.init             |main                       |        [Legacy] Flash Client API        : enabled (all versions)
+14-Dec-21 14:42:45,128|INFO |L.init             |main                       |        [Legacy] Flex and AIR Client API : enabled (all versions)
+14-Dec-21 14:42:45,128|INFO |L.init             |main                       |        [Legacy] Java ME Client API      : enabled (all versions)
+14-Dec-21 14:42:45,129|INFO |L.init             |main                       |        [Legacy] Silverlight Client API  : enabled (all versions)
+14-Dec-21 14:42:45,129|WARN |L.init             |main                       |Lightstreamer Server is running with a Demo license, which has a limit of 20 concurrent users and can be used for evaluation, development, and testing, but not for production. If you need to evaluate Lightstreamer Server without this user limit, or need any information on the other license types, please contact info@lightstreamer.com
+14-Dec-21 14:42:45,667|INFO |L.init             |main                       |Number of detected cores: 12
+14-Dec-21 14:42:45,667|INFO |L.init             |main                       |Lightstreamer Server starting in ENTERPRISE edition.
+14-Dec-21 14:42:46,015|INFO |L.init             |main                       |Started RMI server for JMX on port 8888
+14-Dec-21 14:42:46,029|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) started...
+14-Dec-21 14:42:46,130|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) successful.
+14-Dec-21 14:42:46,132|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 started...
+14-Dec-21 14:42:46,143|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 successful.
+14-Dec-21 14:42:46,229|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) started...
+14-Dec-21 14:42:46,233|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) successful.
+14-Dec-21 14:42:46,236|INFO |L.init.connections |main                       |SERVER pool size set by default at 1000.
+14-Dec-21 14:42:46,237|INFO |L.init.connections |main                       |ACCEPT pool size set by default at 12.
+14-Dec-21 14:42:46,247|INFO |L.scheduler        |main                       |Creating passthrough checker on ACCEPT
+14-Dec-21 14:42:46,259|INFO |L.scheduler        |main                       |Creating checker for 100 on SERVER
+14-Dec-21 14:42:46,260|INFO |L.scheduler        |main                       |Importing checkers from SERVER to ACCEPT
+14-Dec-21 14:42:46,260|INFO |L.scheduler        |main                       |Adding checker SERVER to ACCEPT
+14-Dec-21 14:42:46,262|INFO |L.init.connections |main                       |Queue limit checks for SERVER pool added to checks for ACCEPT pool.
+14-Dec-21 14:42:46,262|INFO |L.scheduler        |main                       |Creating passthrough checker on PRESTARTED SESSIONS
+14-Dec-21 14:42:46,315|INFO |L.i.subscriptions  |main                       |data_provider element without name attribute; using DEFAULT as the default name.
+14-Dec-21 14:42:46,371|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+14-Dec-21 14:42:46,371|INFO |L.i.subscriptions  |Init for WELCOME           |Loading Metadata Adapter for Adapter Set WELCOME
+14-Dec-21 14:42:46,372|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Finished loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+14-Dec-21 14:42:46,440|INFO |L.i.subscriptions  |or PROXY_HELLOWORLD.DEFAULT|Loading Data Adapter PROXY_HELLOWORLD.DEFAULT
+14-Dec-21 14:42:46,461|INFO |reamerProxyAdapters|or PROXY_HELLOWORLD.DEFAULT|Proxy Data Adapter starting
+14-Dec-21 14:42:46,465|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connecting...
+14-Dec-21 14:42:46,468|INFO |L.P.D.transport    |Notify Socket Connector    |Waiting for a connection on port 6662...
+14-Dec-21 14:42:46,468|INFO |L.P.D.transport    |uest/Reply Socket Connector|Waiting for a connection on port 6661...
+14-Dec-21 14:42:46,806|INFO |L.i.subscriptions  |Init for WELCOME           |Finished loading Metadata Adapter for Adapter Set WELCOME
+14-Dec-21 14:42:46,807|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Loading Data Adapter WELCOME.TELEMETRY
+14-Dec-21 14:42:46,807|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Loading Data Adapter WELCOME.CHAT
+14-Dec-21 14:42:46,808|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Loading Data Adapter WELCOME.STOCKS
+14-Dec-21 14:42:46,808|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Loading Data Adapter WELCOME.ROOMBALL
+14-Dec-21 14:42:46,810|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Finished loading Data Adapter WELCOME.TELEMETRY
+14-Dec-21 14:42:46,811|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Finished loading Data Adapter WELCOME.ROOMBALL
+14-Dec-21 14:42:46,814|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Finished loading Data Adapter WELCOME.CHAT
+14-Dec-21 14:42:46,814|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Finished loading Data Adapter WELCOME.STOCKS

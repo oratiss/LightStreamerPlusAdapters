@@ -1,0 +1,958 @@
+08-Dec-21 11:23:01,064|INFO |L.init             |main                       |Lightstreamer Server 7.2.0 build 2001
+08-Dec-21 11:23:01,070|INFO |L.init             |main                       |Server launched on Java Virtual Machine: Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 25.311-b11, 1.8.0_311-b11 on Windows 10
+08-Dec-21 11:23:01,094|INFO |L.license          |main                       |License correctly bound with the following parameter(s):
+08-Dec-21 11:23:01,094|INFO |L.license          |main                       |        Product                          : LS-SERVER
+08-Dec-21 11:23:01,095|INFO |L.license          |main                       |        Edition                          : ENTERPRISE
+08-Dec-21 11:23:01,095|INFO |L.license          |main                       |        License Type                     : DEMO
+08-Dec-21 11:23:01,095|INFO |L.license          |main                       |        Contract Id                      : DEMO
+08-Dec-21 11:23:01,095|INFO |L.init             |main                       |        Mobile Push Notifications        : enabled
+08-Dec-21 11:23:01,095|INFO |L.init             |main                       |        Max Message Rate (Downstream)    : unlimited
+08-Dec-21 11:23:01,096|INFO |L.init             |main                       |        JMX Management API               : enabled
+08-Dec-21 11:23:01,096|INFO |L.init             |main                       |        Bandwidth Control                : enabled
+08-Dec-21 11:23:01,096|INFO |L.init             |main                       |        TLS/SSL Support                  : enabled
+08-Dec-21 11:23:01,096|INFO |L.init             |main                       |        Web Client API                   : enabled (all versions)
+08-Dec-21 11:23:01,096|INFO |L.init             |main                       |        Android Client API               : enabled (all versions)
+08-Dec-21 11:23:01,096|INFO |L.init             |main                       |        iOS Client API                   : enabled (all versions)
+08-Dec-21 11:23:01,096|INFO |L.init             |main                       |        Java SE Client API               : enabled (all versions)
+08-Dec-21 11:23:01,097|INFO |L.init             |main                       |        .NET Standard Client API         : enabled (all versions)
+08-Dec-21 11:23:01,097|INFO |L.init             |main                       |        Node.js Client API               : enabled (all versions)
+08-Dec-21 11:23:01,097|INFO |L.init             |main                       |        macOS Client API                 : enabled (all versions)
+08-Dec-21 11:23:01,098|INFO |L.init             |main                       |        tvOS Client API                  : enabled (all versions)
+08-Dec-21 11:23:01,098|INFO |L.init             |main                       |        watchOS Client API               : enabled (all versions)
+08-Dec-21 11:23:01,098|INFO |L.init             |main                       |        Generic Clients (TLCP Protocol)  : enabled (all versions)
+08-Dec-21 11:23:01,098|INFO |L.init             |main                       |        [Legacy] BlackBerry Client API   : enabled (all versions)
+08-Dec-21 11:23:01,098|INFO |L.init             |main                       |        [Legacy] Flash Client API        : enabled (all versions)
+08-Dec-21 11:23:01,098|INFO |L.init             |main                       |        [Legacy] Flex and AIR Client API : enabled (all versions)
+08-Dec-21 11:23:01,099|INFO |L.init             |main                       |        [Legacy] Java ME Client API      : enabled (all versions)
+08-Dec-21 11:23:01,099|INFO |L.init             |main                       |        [Legacy] Silverlight Client API  : enabled (all versions)
+08-Dec-21 11:23:01,099|WARN |L.init             |main                       |Lightstreamer Server is running with a Demo license, which has a limit of 20 concurrent users and can be used for evaluation, development, and testing, but not for production. If you need to evaluate Lightstreamer Server without this user limit, or need any information on the other license types, please contact info@lightstreamer.com
+08-Dec-21 11:23:01,542|INFO |L.init             |main                       |Number of detected cores: 12
+08-Dec-21 11:23:01,542|INFO |L.init             |main                       |Lightstreamer Server starting in ENTERPRISE edition.
+08-Dec-21 11:23:01,840|INFO |L.init             |main                       |Started RMI server for JMX on port 8888
+08-Dec-21 11:23:01,844|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) started...
+08-Dec-21 11:23:01,925|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) successful.
+08-Dec-21 11:23:01,926|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 started...
+08-Dec-21 11:23:01,939|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 successful.
+08-Dec-21 11:23:01,977|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) started...
+08-Dec-21 11:23:01,979|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) successful.
+08-Dec-21 11:23:01,982|INFO |L.init.connections |main                       |SERVER pool size set by default at 1000.
+08-Dec-21 11:23:01,983|INFO |L.init.connections |main                       |ACCEPT pool size set by default at 12.
+08-Dec-21 11:23:01,994|INFO |L.scheduler        |main                       |Creating passthrough checker on ACCEPT
+08-Dec-21 11:23:02,005|INFO |L.scheduler        |main                       |Creating checker for 100 on SERVER
+08-Dec-21 11:23:02,006|INFO |L.scheduler        |main                       |Importing checkers from SERVER to ACCEPT
+08-Dec-21 11:23:02,006|INFO |L.scheduler        |main                       |Adding checker SERVER to ACCEPT
+08-Dec-21 11:23:02,008|INFO |L.init.connections |main                       |Queue limit checks for SERVER pool added to checks for ACCEPT pool.
+08-Dec-21 11:23:02,009|INFO |L.scheduler        |main                       |Creating passthrough checker on PRESTARTED SESSIONS
+08-Dec-21 11:23:02,079|INFO |L.i.subscriptions  |main                       |data_provider element without name attribute; using DEFAULT as the default name.
+08-Dec-21 11:23:02,106|INFO |L.i.subscriptions  |Init for WELCOME           |Loading Metadata Adapter for Adapter Set WELCOME
+08-Dec-21 11:23:02,106|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+08-Dec-21 11:23:02,192|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Finished loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+08-Dec-21 11:23:02,193|INFO |L.i.subscriptions  |or PROXY_HELLOWORLD.DEFAULT|Loading Data Adapter PROXY_HELLOWORLD.DEFAULT
+08-Dec-21 11:23:02,213|INFO |reamerProxyAdapters|or PROXY_HELLOWORLD.DEFAULT|Proxy Data Adapter starting
+08-Dec-21 11:23:02,218|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connecting...
+08-Dec-21 11:23:02,221|INFO |L.P.D.transport    |uest/Reply Socket Connector|Waiting for a connection on port 6661...
+08-Dec-21 11:23:02,221|INFO |L.P.D.transport    |Notify Socket Connector    |Waiting for a connection on port 6662...
+08-Dec-21 11:23:02,557|INFO |L.i.subscriptions  |Init for WELCOME           |Finished loading Metadata Adapter for Adapter Set WELCOME
+08-Dec-21 11:23:02,558|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Loading Data Adapter WELCOME.CHAT
+08-Dec-21 11:23:02,558|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Loading Data Adapter WELCOME.STOCKS
+08-Dec-21 11:23:02,558|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Loading Data Adapter WELCOME.TELEMETRY
+08-Dec-21 11:23:02,558|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Loading Data Adapter WELCOME.ROOMBALL
+08-Dec-21 11:23:02,560|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Finished loading Data Adapter WELCOME.CHAT
+08-Dec-21 11:23:02,562|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Finished loading Data Adapter WELCOME.ROOMBALL
+08-Dec-21 11:23:02,563|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Finished loading Data Adapter WELCOME.TELEMETRY
+08-Dec-21 11:23:02,565|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Finished loading Data Adapter WELCOME.STOCKS
+08-Dec-21 11:23:35,554|INFO |L.P.D.transport    |pool-2-thread-1            |Accepted connection (1) on the Notify socket on port 6662 from /0:0:0:0:0:0:0:1:50633
+08-Dec-21 11:23:35,554|INFO |L.P.D.transport    |pool-3-thread-1            |Accepted connection (1) on the Request/Reply socket on port 6661 from /0:0:0:0:0:0:0:1:50632
+08-Dec-21 11:23:35,561|INFO |L.P.D.r.notify     |RLD.DEFAULT Notify Receiver|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 11:23:35,563|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 11:23:35,564|INFO |L.P.D.r.reply      |ORLD.DEFAULT Reply Receiver|Reply receiver 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 11:23:35,566|INFO |L.P.D.transport    |pool-2-thread-1            |Connected (1)  on port 6662 from /0:0:0:0:0:0:0:1:50633
+08-Dec-21 11:23:35,566|INFO |L.P.D.transport    |pool-3-thread-1            |Connected (1)  on port 6661 from /0:0:0:0:0:0:0:1:50632
+08-Dec-21 11:23:35,566|INFO |L.P.D.transport    |pool-2-thread-1            |Stopped waiting on port 6662
+08-Dec-21 11:23:35,566|INFO |L.P.D.transport    |pool-3-thread-1            |Stopped waiting on port 6661
+08-Dec-21 11:23:35,566|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Stopped waiting on port 6661
+08-Dec-21 11:23:35,566|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connected
+08-Dec-21 11:23:45,567|ERROR|L.P.DEFAULT        |or PROXY_HELLOWORLD.DEFAULT|Exception caught while trying to initialize the Remote Server on PROXY_HELLOWORLD.DEFAULT: Timeout while waiting for answer to request 10000017d99089249
+08-Dec-21 11:23:45,567|INFO |L.P.DEFAULT.sender |or PROXY_HELLOWORLD.DEFAULT|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: initialization failed
+08-Dec-21 11:23:45,568|INFO |L.P.D.r.notify     |or PROXY_HELLOWORLD.DEFAULT|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: initialization failed
+08-Dec-21 11:23:45,568|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Trying to send close message from request sender 'PROXY_HELLOWORLD.DEFAULT-1'
+08-Dec-21 11:23:45,568|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' stopped
+08-Dec-21 11:23:45,568|INFO |L.P.D.r.notify     |RLD.DEFAULT Notify Receiver|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' stopped
+08-Dec-21 11:23:45,569|INFO |L.P.D.r.reply      |ORLD.DEFAULT Request Sender|Reply receiver 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: initialization failed
+08-Dec-21 11:23:45,569|ERROR|L.i.subscriptions  |main                       |Error in task Init for PROXY_HELLOWORLD.DEFAULT: Timeout while waiting for answer to request 10000017d99089249: com.lightstreamer.interfaces.data.DataProviderException: Timeout while waiting for answer to request 10000017d99089249.
+08-Dec-21 11:23:45,611|ERROR|L.i.subscriptions  |main                       |Error while loading the Adapters: LoadingException: Error in Adapter loading.
+08-Dec-21 11:23:45,611|ERROR|L.init             |main                       |Error while loading the Adapters: Error in Adapter loading.
+08-Dec-21 11:23:45,611|FATAL|L.P.DEFAULT        |ORLD.DEFAULT Reply Receiver|I/O Exception caught while reading/writing from/to streams on PROXY_HELLOWORLD.DEFAULT: Socket closed, aborting...
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 11:23:45,611|FATAL|L.init             |main                       |Adapters initialization failed.
+08-Dec-21 11:25:02,240|INFO |L.init             |main                       |Lightstreamer Server 7.2.0 build 2001
+08-Dec-21 11:25:02,242|INFO |L.init             |main                       |Server launched on Java Virtual Machine: Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 25.311-b11, 1.8.0_311-b11 on Windows 10
+08-Dec-21 11:25:02,256|INFO |L.license          |main                       |License correctly bound with the following parameter(s):
+08-Dec-21 11:25:02,256|INFO |L.license          |main                       |        Product                          : LS-SERVER
+08-Dec-21 11:25:02,256|INFO |L.license          |main                       |        Edition                          : ENTERPRISE
+08-Dec-21 11:25:02,256|INFO |L.license          |main                       |        License Type                     : DEMO
+08-Dec-21 11:25:02,257|INFO |L.license          |main                       |        Contract Id                      : DEMO
+08-Dec-21 11:25:02,257|INFO |L.init             |main                       |        Mobile Push Notifications        : enabled
+08-Dec-21 11:25:02,257|INFO |L.init             |main                       |        Max Message Rate (Downstream)    : unlimited
+08-Dec-21 11:25:02,257|INFO |L.init             |main                       |        JMX Management API               : enabled
+08-Dec-21 11:25:02,257|INFO |L.init             |main                       |        Bandwidth Control                : enabled
+08-Dec-21 11:25:02,257|INFO |L.init             |main                       |        TLS/SSL Support                  : enabled
+08-Dec-21 11:25:02,257|INFO |L.init             |main                       |        Web Client API                   : enabled (all versions)
+08-Dec-21 11:25:02,257|INFO |L.init             |main                       |        Android Client API               : enabled (all versions)
+08-Dec-21 11:25:02,257|INFO |L.init             |main                       |        iOS Client API                   : enabled (all versions)
+08-Dec-21 11:25:02,258|INFO |L.init             |main                       |        Java SE Client API               : enabled (all versions)
+08-Dec-21 11:25:02,258|INFO |L.init             |main                       |        .NET Standard Client API         : enabled (all versions)
+08-Dec-21 11:25:02,258|INFO |L.init             |main                       |        Node.js Client API               : enabled (all versions)
+08-Dec-21 11:25:02,258|INFO |L.init             |main                       |        macOS Client API                 : enabled (all versions)
+08-Dec-21 11:25:02,259|INFO |L.init             |main                       |        tvOS Client API                  : enabled (all versions)
+08-Dec-21 11:25:02,259|INFO |L.init             |main                       |        watchOS Client API               : enabled (all versions)
+08-Dec-21 11:25:02,259|INFO |L.init             |main                       |        Generic Clients (TLCP Protocol)  : enabled (all versions)
+08-Dec-21 11:25:02,260|INFO |L.init             |main                       |        [Legacy] BlackBerry Client API   : enabled (all versions)
+08-Dec-21 11:25:02,260|INFO |L.init             |main                       |        [Legacy] Flash Client API        : enabled (all versions)
+08-Dec-21 11:25:02,261|INFO |L.init             |main                       |        [Legacy] Flex and AIR Client API : enabled (all versions)
+08-Dec-21 11:25:02,261|INFO |L.init             |main                       |        [Legacy] Java ME Client API      : enabled (all versions)
+08-Dec-21 11:25:02,261|INFO |L.init             |main                       |        [Legacy] Silverlight Client API  : enabled (all versions)
+08-Dec-21 11:25:02,262|WARN |L.init             |main                       |Lightstreamer Server is running with a Demo license, which has a limit of 20 concurrent users and can be used for evaluation, development, and testing, but not for production. If you need to evaluate Lightstreamer Server without this user limit, or need any information on the other license types, please contact info@lightstreamer.com
+08-Dec-21 11:25:02,584|INFO |L.init             |main                       |Number of detected cores: 12
+08-Dec-21 11:25:02,585|INFO |L.init             |main                       |Lightstreamer Server starting in ENTERPRISE edition.
+08-Dec-21 11:25:02,820|INFO |L.init             |main                       |Started RMI server for JMX on port 8888
+08-Dec-21 11:25:02,823|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) started...
+08-Dec-21 11:25:02,870|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) successful.
+08-Dec-21 11:25:02,871|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 started...
+08-Dec-21 11:25:02,880|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 successful.
+08-Dec-21 11:25:02,901|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) started...
+08-Dec-21 11:25:02,904|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) successful.
+08-Dec-21 11:25:02,907|INFO |L.init.connections |main                       |SERVER pool size set by default at 1000.
+08-Dec-21 11:25:02,908|INFO |L.init.connections |main                       |ACCEPT pool size set by default at 12.
+08-Dec-21 11:25:02,914|INFO |L.scheduler        |main                       |Creating passthrough checker on ACCEPT
+08-Dec-21 11:25:02,924|INFO |L.scheduler        |main                       |Creating checker for 100 on SERVER
+08-Dec-21 11:25:02,924|INFO |L.scheduler        |main                       |Importing checkers from SERVER to ACCEPT
+08-Dec-21 11:25:02,924|INFO |L.scheduler        |main                       |Adding checker SERVER to ACCEPT
+08-Dec-21 11:25:02,926|INFO |L.init.connections |main                       |Queue limit checks for SERVER pool added to checks for ACCEPT pool.
+08-Dec-21 11:25:02,926|INFO |L.scheduler        |main                       |Creating passthrough checker on PRESTARTED SESSIONS
+08-Dec-21 11:25:02,958|INFO |L.i.subscriptions  |main                       |data_provider element without name attribute; using DEFAULT as the default name.
+08-Dec-21 11:25:02,968|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+08-Dec-21 11:25:02,968|INFO |L.i.subscriptions  |Init for WELCOME           |Loading Metadata Adapter for Adapter Set WELCOME
+08-Dec-21 11:25:02,969|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Finished loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+08-Dec-21 11:25:02,976|INFO |L.i.subscriptions  |or PROXY_HELLOWORLD.DEFAULT|Loading Data Adapter PROXY_HELLOWORLD.DEFAULT
+08-Dec-21 11:25:02,984|INFO |reamerProxyAdapters|or PROXY_HELLOWORLD.DEFAULT|Proxy Data Adapter starting
+08-Dec-21 11:25:02,988|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connecting...
+08-Dec-21 11:25:02,990|INFO |L.P.D.transport    |Notify Socket Connector    |Waiting for a connection on port 6662...
+08-Dec-21 11:25:02,990|INFO |L.P.D.transport    |uest/Reply Socket Connector|Waiting for a connection on port 6661...
+08-Dec-21 11:25:03,225|INFO |L.i.subscriptions  |Init for WELCOME           |Finished loading Metadata Adapter for Adapter Set WELCOME
+08-Dec-21 11:25:03,226|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Loading Data Adapter WELCOME.TELEMETRY
+08-Dec-21 11:25:03,226|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Loading Data Adapter WELCOME.CHAT
+08-Dec-21 11:25:03,229|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Loading Data Adapter WELCOME.ROOMBALL
+08-Dec-21 11:25:03,226|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Loading Data Adapter WELCOME.STOCKS
+08-Dec-21 11:25:03,228|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Finished loading Data Adapter WELCOME.TELEMETRY
+08-Dec-21 11:25:03,231|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Finished loading Data Adapter WELCOME.CHAT
+08-Dec-21 11:25:03,233|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Finished loading Data Adapter WELCOME.ROOMBALL
+08-Dec-21 11:25:03,233|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Finished loading Data Adapter WELCOME.STOCKS
+08-Dec-21 11:25:13,912|INFO |L.P.D.transport    |pool-2-thread-1            |Accepted connection (1) on the Notify socket on port 6662 from /0:0:0:0:0:0:0:1:50653
+08-Dec-21 11:25:13,912|INFO |L.P.D.transport    |pool-3-thread-1            |Accepted connection (1) on the Request/Reply socket on port 6661 from /0:0:0:0:0:0:0:1:50652
+08-Dec-21 11:25:13,915|INFO |L.P.D.r.notify     |RLD.DEFAULT Notify Receiver|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 11:25:13,916|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 11:25:13,922|INFO |L.P.D.r.reply      |ORLD.DEFAULT Reply Receiver|Reply receiver 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 11:25:13,923|INFO |L.P.D.transport    |pool-2-thread-1            |Connected (1)  on port 6662 from /0:0:0:0:0:0:0:1:50653
+08-Dec-21 11:25:13,923|INFO |L.P.D.transport    |pool-3-thread-1            |Connected (1)  on port 6661 from /0:0:0:0:0:0:0:1:50652
+08-Dec-21 11:25:13,923|INFO |L.P.D.transport    |pool-2-thread-1            |Stopped waiting on port 6662
+08-Dec-21 11:25:13,923|INFO |L.P.D.transport    |pool-3-thread-1            |Stopped waiting on port 6661
+08-Dec-21 11:25:13,923|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Stopped waiting on port 6661
+08-Dec-21 11:25:13,923|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connected
+08-Dec-21 11:25:13,950|INFO |L.P.DEFAULT        |or PROXY_HELLOWORLD.DEFAULT|Received Remote Server protocol version as 1.8.3: accepted.
+08-Dec-21 11:25:13,950|INFO |L.P.DEFAULT        |or PROXY_HELLOWORLD.DEFAULT|Proxy Data Adapter started with protocol version 1.8.3
+08-Dec-21 11:25:13,950|INFO |L.i.subscriptions  |or PROXY_HELLOWORLD.DEFAULT|Finished loading Data Adapter PROXY_HELLOWORLD.DEFAULT
+08-Dec-21 11:25:13,995|INFO |L.init.preprocessor|main                       |Events pool size set by default at 12.
+08-Dec-21 11:25:13,998|INFO |L.init.preprocessor|main                       |Snapshot pool size set by default at 12.
+08-Dec-21 11:25:14,079|WARN |L.init.monitoring  |main                       |THE MONITORING DASHBOARD IS NOT PASSWORD PROTECTED. Remember to protect it in production! For more details, see PRODUCTION_SECURITY_NOTES.TXT.
+08-Dec-21 11:25:14,114|INFO |L.init.pump        |main                       |Pump pool size set by default at 12.
+08-Dec-21 11:25:14,114|INFO |L.scheduler        |main                       |Creating passthrough checker on PUMP
+08-Dec-21 11:25:14,123|INFO |L.init.connections |main                       |Selector pool size set by default at 12.
+08-Dec-21 11:25:14,124|INFO |L.init.connections |main                       |Selector maximum load set by default at 0.
+08-Dec-21 11:25:14,165|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 1.
+08-Dec-21 11:25:14,166|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 2.
+08-Dec-21 11:25:14,166|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 3.
+08-Dec-21 11:25:14,167|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 4.
+08-Dec-21 11:25:14,167|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 5.
+08-Dec-21 11:25:14,168|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 6.
+08-Dec-21 11:25:14,169|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 7.
+08-Dec-21 11:25:14,169|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 8.
+08-Dec-21 11:25:14,170|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 9.
+08-Dec-21 11:25:14,171|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 10.
+08-Dec-21 11:25:14,172|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 11.
+08-Dec-21 11:25:14,173|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 12.
+08-Dec-21 11:25:14,181|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 1.
+08-Dec-21 11:25:14,197|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 2.
+08-Dec-21 11:25:14,201|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 3.
+08-Dec-21 11:25:14,203|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 4.
+08-Dec-21 11:25:14,204|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 5.
+08-Dec-21 11:25:14,205|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 6.
+08-Dec-21 11:25:14,207|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 7.
+08-Dec-21 11:25:14,224|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 8.
+08-Dec-21 11:25:14,226|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 9.
+08-Dec-21 11:25:14,229|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 10.
+08-Dec-21 11:25:14,230|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 11.
+08-Dec-21 11:25:14,231|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 12.
+08-Dec-21 11:25:14,235|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 1.
+08-Dec-21 11:25:14,237|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 2.
+08-Dec-21 11:25:14,240|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 3.
+08-Dec-21 11:25:14,242|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 4.
+08-Dec-21 11:25:14,259|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 5.
+08-Dec-21 11:25:14,262|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 6.
+08-Dec-21 11:25:14,265|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 7.
+08-Dec-21 11:25:14,266|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 8.
+08-Dec-21 11:25:14,267|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 9.
+08-Dec-21 11:25:14,268|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 10.
+08-Dec-21 11:25:14,269|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 11.
+08-Dec-21 11:25:14,270|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 12.
+08-Dec-21 11:25:14,271|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 1.
+08-Dec-21 11:25:14,274|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 2.
+08-Dec-21 11:25:14,308|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 3.
+08-Dec-21 11:25:14,311|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 4.
+08-Dec-21 11:25:14,337|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 5.
+08-Dec-21 11:25:14,342|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 6.
+08-Dec-21 11:25:14,343|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 7.
+08-Dec-21 11:25:14,344|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 8.
+08-Dec-21 11:25:14,346|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 9.
+08-Dec-21 11:25:14,347|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 10.
+08-Dec-21 11:25:14,349|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 11.
+08-Dec-21 11:25:14,350|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 12.
+08-Dec-21 11:25:14,392|INFO |L.init             |main                       |Lightstreamer Server initialized.
+08-Dec-21 11:25:14,392|INFO |L.init             |main                       |Lightstreamer Server 7.2.0 build 2001 starting...
+08-Dec-21 11:25:14,416|INFO |L.init             |r Lightstreamer HTTP Server|Session creation on socket Lightstreamer HTTP Server bound to any queue limits for SERVER pool.
+08-Dec-21 11:25:14,416|INFO |L.init             |main                       |Server "Lightstreamer HTTP Server" listening to *:9099 ...
+08-Dec-21 11:25:14,630|INFO |streamerMonitorText|Timer-1                    |Total threads = 141, Total heap = 512753664 (free = 486948640), Sessions = 0 (max = 0, refused = 0), New sessions = [+0, -0], Connections = 0 (max = 0), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 0 (for 0 subscriptions), Inbound throughput = 0 updates/s (pre-filtered = 0), Outbound throughput = 0 updates/s (0 kbit/s, max = 0), Lost updates = 0 (total = 0), Total bytes sent = 0, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:26:19,186|INFO |L.requests         |SERVER POOLED THREAD 6     |Serving request: /lightstreamer/dashboard/create_session.txt?LS_protocol=TLCP-2.1.0 --> LS_phase=3001&LS_cause=new.api&LS_polling=true&LS_polling_millis=0&LS_idle_millis=0&LS_cid=pcYgxn8m8 feOojyA1U661i3g2.pz47Af6k&LS_requested_max_bandwidth=100&LS_adapter_set=MONITOR& on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50774
+08-Dec-21 11:26:19,248|INFO |L.requests         |SERVER POOLED THREAD 6     |Starting new session: S2d2d9e7ab2b78842Mb59T2619247 (javascript_client 8.0.3 build 1800) on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50774
+08-Dec-21 11:26:19,261|INFO |L.pump             |SERVER POOLED THREAD 6     |Session S2d2d9e7ab2b78842Mb59T2619247 started.
+08-Dec-21 11:26:19,316|INFO |L.requests         |SERVER POOLED THREAD 6     |Serving request: bind_session -> LS_session=S2d2d9e7ab2b78842Mb59T2619247&LS_phase=3003&LS_cause=loop1& on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,318|INFO |L.requests         |SERVER POOLED THREAD 6     |Attaching session: S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,512|INFO |L.requests         |SERVER POOLED THREAD 6     |Serving request: control -> LS_mode=MERGE&LS_group=monitor_statistics&LS_schema=CLIENTS.SESSIONS%20CLIENTS.STREAMING_SESSIONS%20CLIENTS.POLLING_SESSIONS%20CLIENTS.CONNECTIONS%20PUSH_NOTIFICATIONS.DEVICES%20MEMORY.TOTAL%20POOL.QUEUE%20THREADS%20POOL.ACTIVE%20POOL.WAITING%20MEMORY.FREE%20POOL.SIZE%20CLIENTS.MAX_SESSIONS%20CLIENTS.MAX_CONNECTIONS%20PUSH_NOTIFICATIONS.MAX_DEVICES%20CLIENTS.ITEM_SUBSCR%20ITEMS.TOTAL%20UPDATES.EVENTS_SEC%20UPDATES.TOTAL_OUT%20UPDATES.TOTAL_LOST%20BANDWIDTH.CURRENT%20BANDWIDTH.TOTAL_BYTES%20PUSH_NOTIFICATIONS.NOTIFICATIONS_SEC%20PUSH_NOTIFICATIONS.TOTAL_SENT%20PUSH_NOTIFICATIONS.CURRENT_THROUGHPUT%20PUSH_NOTIFICATIONS.TOTAL_BYTES%20MESSAGES.EVENTS_SEC%20MESSAGES.TOTAL_HANDLED%20MESSAGES.CURRENT_THROUGHPUT%20MESSAGES.TOTAL_BYTES%20ITEMS.EVENTS_SEC%20UPDATES.TOTAL_IN&LS_snapshot=true&LS_subId=1&LS_op=add&LS_reqId=1&LS_session=S2d2d9e7ab2b78842Mb59T2619247& on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,512|INFO |L.requests         |SERVER POOLED THREAD 7     |Serving multiple request: control -> {3 subrequests} on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,513|INFO |L.requests         |SERVER POOLED THREAD 7     |Subrequest 1: LS_mode=MERGE&LS_group=monitor_identification&LS_schema=STARTUP_TIME%20EDITION%20LICENSE_TYPE%20LOCAL_HOST%20VERSION%20LOCAL_IP%20CLIENT_ID%20DASHBOARD_IS_PUBLIC&LS_snapshot=true&LS_subId=2&LS_op=add&LS_reqId=3& LS_session:S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,513|INFO |L.requests         |SERVER POOLED THREAD 7     |Subrequest 2: LS_mode=MERGE&LS_group=monitor_local_socket&LS_schema=SERVER_NAME%20LOCAL_PORT&LS_snapshot=true&LS_subId=3&LS_op=add&LS_reqId=5& LS_session:S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,513|INFO |L.requests         |SERVER POOLED THREAD 7     |Subrequest 3: LS_mode=MERGE&LS_group=monitor_identification&LS_schema=EDITION%20LICENSE_TYPE%20CLIENT_ID&LS_snapshot=true&LS_subId=4&LS_op=add&LS_reqId=7& LS_session:S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,526|INFO |L.requests         |SERVER POOLED THREAD 7     |Controlling session: S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,526|INFO |L.requests         |SERVER POOLED THREAD 6     |Controlling session: S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,526|INFO |L.requests         |SERVER POOLED THREAD 8     |Controlling session: S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,526|INFO |L.requests         |SERVER POOLED THREAD 9     |Controlling session: S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,600|INFO |L.requests         |SERVER POOLED THREAD 6     |Serving request: control -> LS_mode=MERGE&LS_group=monitor_details&LS_schema=MAX_SSNS%20IS_MPN%20EXP_DATE%20MAX_RATE%20BAND%20TLS%20JMX%20VAL_TYPE&LS_snapshot=true&LS_subId=5&LS_op=add&LS_reqId=9& LS_session:S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,600|INFO |L.requests         |SERVER POOLED THREAD 10    |Controlling session: S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,603|INFO |L.requests         |SERVER POOLED THREAD 5     |Serving request: control -> LS_mode=COMMAND&LS_group=monitor_client_libs&LS_schema=key%20command%20lib_ext%20free%20demo%20eval%20startup%20noprod-lim%20noprod-full%20prod%20standby%20ordinal&LS_snapshot=true&LS_subId=6&LS_op=add&LS_reqId=11& LS_session:S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:26:19,603|INFO |L.requests         |SERVER POOLED THREAD 10    |Controlling session: S2d2d9e7ab2b78842Mb59T2619247 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:50786
+08-Dec-21 11:27:15,083|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 215763864), Sessions = 1 (max = 1, refused = 0), New sessions = [+1, -0], Connections = 1 (max = 13), New connections = [+13, -12], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.37 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 2716, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:29:15,578|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 210930408), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.4 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 4877, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:31:16,001|INFO |streamerMonitorText|Timer-1                    |Total threads = 151, Total heap = 299368448 (free = 198789432), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.4 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 7162, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:33:16,454|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 193956040), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.34 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 9500, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:35:16,839|INFO |streamerMonitorText|Timer-1                    |Total threads = 151, Total heap = 299368448 (free = 189331288), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.35 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 11839, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:37:17,273|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 181813048), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.4 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 14185, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:39:17,704|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 177247696), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.35 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 16496, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:41:18,176|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 169669664), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.4 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 18862, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:43:18,639|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 165104032), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.34 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 21203, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:45:19,023|INFO |streamerMonitorText|Timer-1                    |Total threads = 151, Total heap = 299368448 (free = 158900232), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.34 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 23488, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:47:19,476|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 264950776), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.35 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 25755, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:49:19,932|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 258841120), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.34 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 27957, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:51:20,403|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 250577760), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.36 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 30146, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:53:20,817|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 244083072), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.33 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 32313, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:55:21,258|INFO |streamerMonitorText|Timer-1                    |Total threads = 151, Total heap = 299368448 (free = 238303128), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.35 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 34515, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:57:21,787|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 233105656), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.33 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 36687, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:59:22,236|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299368448 (free = 227992368), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 13), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.36 kbit/s, max = 6.58), Lost updates = 0 (total = 0), Total bytes sent = 38848, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 11:59:33,216|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Reply Receiver|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 11:59:33,216|INFO |L.P.D.r.notify     |RLD.DEFAULT Notify Receiver|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 11:59:33,216|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Trying to send close message from request sender 'PROXY_HELLOWORLD.DEFAULT-1'
+08-Dec-21 11:59:33,217|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Failed to send close message from request sender 'PROXY_HELLOWORLD.DEFAULT-1'
+08-Dec-21 11:59:33,217|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' stopped
+08-Dec-21 11:59:33,217|INFO |L.P.D.r.reply      |ORLD.DEFAULT Request Sender|Reply receiver 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 11:59:33,218|FATAL|L.P.DEFAULT        |RLD.DEFAULT Notify Receiver|I/O Exception caught while reading/writing from/to streams on PROXY_HELLOWORLD.DEFAULT: Connection reset, aborting...
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 11:59:33,218|FATAL|L.P.DEFAULT        |ORLD.DEFAULT Reply Receiver|I/O Exception caught while reading/writing from/to streams on PROXY_HELLOWORLD.DEFAULT: Connection reset, aborting...
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 11:59:33,218|ERROR|L.kernel           |RLD.DEFAULT Notify Receiver|Failure invoked by Data Adapter PROXY_HELLOWORLD.DEFAULT:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 11:59:33,218|ERROR|L.kernel           |ORLD.DEFAULT Reply Receiver|Failure invoked by Data Adapter PROXY_HELLOWORLD.DEFAULT:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 11:59:33,218|FATAL|L.init             |RLD.DEFAULT Notify Receiver|Failure in a Data Adapter.
+08-Dec-21 11:59:33,218|FATAL|L.init             |ORLD.DEFAULT Reply Receiver|Failure in a Data Adapter.
+08-Dec-21 11:59:33,219|INFO |L.init             |LightstreamerShutdownHook  |Server shutdown requested.
+08-Dec-21 11:59:33,219|INFO |L.init             |LightstreamerShutdownHook  |Exiting.....
+08-Dec-21 12:03:31,170|INFO |L.init             |main                       |Lightstreamer Server 7.2.0 build 2001
+08-Dec-21 12:03:31,173|INFO |L.init             |main                       |Server launched on Java Virtual Machine: Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 25.311-b11, 1.8.0_311-b11 on Windows 10
+08-Dec-21 12:03:31,187|INFO |L.license          |main                       |License correctly bound with the following parameter(s):
+08-Dec-21 12:03:31,187|INFO |L.license          |main                       |        Product                          : LS-SERVER
+08-Dec-21 12:03:31,187|INFO |L.license          |main                       |        Edition                          : ENTERPRISE
+08-Dec-21 12:03:31,187|INFO |L.license          |main                       |        License Type                     : DEMO
+08-Dec-21 12:03:31,187|INFO |L.license          |main                       |        Contract Id                      : DEMO
+08-Dec-21 12:03:31,188|INFO |L.init             |main                       |        Mobile Push Notifications        : enabled
+08-Dec-21 12:03:31,188|INFO |L.init             |main                       |        Max Message Rate (Downstream)    : unlimited
+08-Dec-21 12:03:31,188|INFO |L.init             |main                       |        JMX Management API               : enabled
+08-Dec-21 12:03:31,188|INFO |L.init             |main                       |        Bandwidth Control                : enabled
+08-Dec-21 12:03:31,188|INFO |L.init             |main                       |        TLS/SSL Support                  : enabled
+08-Dec-21 12:03:31,188|INFO |L.init             |main                       |        Web Client API                   : enabled (all versions)
+08-Dec-21 12:03:31,188|INFO |L.init             |main                       |        Android Client API               : enabled (all versions)
+08-Dec-21 12:03:31,189|INFO |L.init             |main                       |        iOS Client API                   : enabled (all versions)
+08-Dec-21 12:03:31,190|INFO |L.init             |main                       |        Java SE Client API               : enabled (all versions)
+08-Dec-21 12:03:31,190|INFO |L.init             |main                       |        .NET Standard Client API         : enabled (all versions)
+08-Dec-21 12:03:31,190|INFO |L.init             |main                       |        Node.js Client API               : enabled (all versions)
+08-Dec-21 12:03:31,190|INFO |L.init             |main                       |        macOS Client API                 : enabled (all versions)
+08-Dec-21 12:03:31,191|INFO |L.init             |main                       |        tvOS Client API                  : enabled (all versions)
+08-Dec-21 12:03:31,191|INFO |L.init             |main                       |        watchOS Client API               : enabled (all versions)
+08-Dec-21 12:03:31,191|INFO |L.init             |main                       |        Generic Clients (TLCP Protocol)  : enabled (all versions)
+08-Dec-21 12:03:31,191|INFO |L.init             |main                       |        [Legacy] BlackBerry Client API   : enabled (all versions)
+08-Dec-21 12:03:31,192|INFO |L.init             |main                       |        [Legacy] Flash Client API        : enabled (all versions)
+08-Dec-21 12:03:31,192|INFO |L.init             |main                       |        [Legacy] Flex and AIR Client API : enabled (all versions)
+08-Dec-21 12:03:31,192|INFO |L.init             |main                       |        [Legacy] Java ME Client API      : enabled (all versions)
+08-Dec-21 12:03:31,192|INFO |L.init             |main                       |        [Legacy] Silverlight Client API  : enabled (all versions)
+08-Dec-21 12:03:31,193|WARN |L.init             |main                       |Lightstreamer Server is running with a Demo license, which has a limit of 20 concurrent users and can be used for evaluation, development, and testing, but not for production. If you need to evaluate Lightstreamer Server without this user limit, or need any information on the other license types, please contact info@lightstreamer.com
+08-Dec-21 12:03:31,512|INFO |L.init             |main                       |Number of detected cores: 12
+08-Dec-21 12:03:31,512|INFO |L.init             |main                       |Lightstreamer Server starting in ENTERPRISE edition.
+08-Dec-21 12:03:31,749|INFO |L.init             |main                       |Started RMI server for JMX on port 8888
+08-Dec-21 12:03:31,751|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) started...
+08-Dec-21 12:03:31,797|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) successful.
+08-Dec-21 12:03:31,797|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 started...
+08-Dec-21 12:03:31,807|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 successful.
+08-Dec-21 12:03:31,827|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) started...
+08-Dec-21 12:03:31,830|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) successful.
+08-Dec-21 12:03:31,832|INFO |L.init.connections |main                       |SERVER pool size set by default at 1000.
+08-Dec-21 12:03:31,833|INFO |L.init.connections |main                       |ACCEPT pool size set by default at 12.
+08-Dec-21 12:03:31,839|INFO |L.scheduler        |main                       |Creating passthrough checker on ACCEPT
+08-Dec-21 12:03:31,848|INFO |L.scheduler        |main                       |Creating checker for 100 on SERVER
+08-Dec-21 12:03:31,849|INFO |L.scheduler        |main                       |Importing checkers from SERVER to ACCEPT
+08-Dec-21 12:03:31,849|INFO |L.scheduler        |main                       |Adding checker SERVER to ACCEPT
+08-Dec-21 12:03:31,851|INFO |L.init.connections |main                       |Queue limit checks for SERVER pool added to checks for ACCEPT pool.
+08-Dec-21 12:03:31,851|INFO |L.scheduler        |main                       |Creating passthrough checker on PRESTARTED SESSIONS
+08-Dec-21 12:03:31,883|INFO |L.i.subscriptions  |main                       |data_provider element without name attribute; using DEFAULT as the default name.
+08-Dec-21 12:03:31,894|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+08-Dec-21 12:03:31,894|INFO |L.i.subscriptions  |Init for WELCOME           |Loading Metadata Adapter for Adapter Set WELCOME
+08-Dec-21 12:03:31,895|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Finished loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+08-Dec-21 12:03:31,903|INFO |L.i.subscriptions  |or PROXY_HELLOWORLD.DEFAULT|Loading Data Adapter PROXY_HELLOWORLD.DEFAULT
+08-Dec-21 12:03:31,911|INFO |reamerProxyAdapters|or PROXY_HELLOWORLD.DEFAULT|Proxy Data Adapter starting
+08-Dec-21 12:03:31,915|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connecting...
+08-Dec-21 12:03:31,917|INFO |L.P.D.transport    |Notify Socket Connector    |Waiting for a connection on port 6662...
+08-Dec-21 12:03:31,917|INFO |L.P.D.transport    |uest/Reply Socket Connector|Waiting for a connection on port 6661...
+08-Dec-21 12:03:32,151|INFO |L.i.subscriptions  |Init for WELCOME           |Finished loading Metadata Adapter for Adapter Set WELCOME
+08-Dec-21 12:03:32,152|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Loading Data Adapter WELCOME.TELEMETRY
+08-Dec-21 12:03:32,152|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Loading Data Adapter WELCOME.CHAT
+08-Dec-21 12:03:32,152|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Loading Data Adapter WELCOME.STOCKS
+08-Dec-21 12:03:32,152|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Loading Data Adapter WELCOME.ROOMBALL
+08-Dec-21 12:03:32,153|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Finished loading Data Adapter WELCOME.TELEMETRY
+08-Dec-21 12:03:32,155|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Finished loading Data Adapter WELCOME.ROOMBALL
+08-Dec-21 12:03:32,158|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Finished loading Data Adapter WELCOME.STOCKS
+08-Dec-21 12:03:32,158|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Finished loading Data Adapter WELCOME.CHAT
+08-Dec-21 12:03:40,870|INFO |L.P.D.transport    |pool-3-thread-1            |Accepted connection (1) on the Request/Reply socket on port 6661 from /0:0:0:0:0:0:0:1:54546
+08-Dec-21 12:03:40,870|INFO |L.P.D.transport    |pool-2-thread-1            |Accepted connection (1) on the Notify socket on port 6662 from /0:0:0:0:0:0:0:1:54547
+08-Dec-21 12:03:40,874|INFO |L.P.D.r.notify     |RLD.DEFAULT Notify Receiver|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 12:03:40,875|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 12:03:40,875|INFO |L.P.D.r.reply      |ORLD.DEFAULT Reply Receiver|Reply receiver 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 12:03:40,876|INFO |L.P.D.transport    |pool-2-thread-1            |Connected (1)  on port 6662 from /0:0:0:0:0:0:0:1:54547
+08-Dec-21 12:03:40,876|INFO |L.P.D.transport    |pool-3-thread-1            |Connected (1)  on port 6661 from /0:0:0:0:0:0:0:1:54546
+08-Dec-21 12:03:40,876|INFO |L.P.D.transport    |pool-3-thread-1            |Stopped waiting on port 6661
+08-Dec-21 12:03:40,876|INFO |L.P.D.transport    |pool-2-thread-1            |Stopped waiting on port 6662
+08-Dec-21 12:03:40,876|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Stopped waiting on port 6661
+08-Dec-21 12:03:40,876|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connected
+08-Dec-21 12:03:40,910|INFO |L.P.DEFAULT        |or PROXY_HELLOWORLD.DEFAULT|Received Remote Server protocol version as 1.8.3: accepted.
+08-Dec-21 12:03:40,910|INFO |L.P.DEFAULT        |or PROXY_HELLOWORLD.DEFAULT|Proxy Data Adapter started with protocol version 1.8.3
+08-Dec-21 12:03:40,910|INFO |L.i.subscriptions  |or PROXY_HELLOWORLD.DEFAULT|Finished loading Data Adapter PROXY_HELLOWORLD.DEFAULT
+08-Dec-21 12:03:40,915|INFO |L.init.preprocessor|main                       |Events pool size set by default at 12.
+08-Dec-21 12:03:40,917|INFO |L.init.preprocessor|main                       |Snapshot pool size set by default at 12.
+08-Dec-21 12:03:40,950|WARN |L.init.monitoring  |main                       |THE MONITORING DASHBOARD IS NOT PASSWORD PROTECTED. Remember to protect it in production! For more details, see PRODUCTION_SECURITY_NOTES.TXT.
+08-Dec-21 12:03:40,968|INFO |L.init.pump        |main                       |Pump pool size set by default at 12.
+08-Dec-21 12:03:40,968|INFO |L.scheduler        |main                       |Creating passthrough checker on PUMP
+08-Dec-21 12:03:40,973|INFO |L.init.connections |main                       |Selector pool size set by default at 12.
+08-Dec-21 12:03:40,974|INFO |L.init.connections |main                       |Selector maximum load set by default at 0.
+08-Dec-21 12:03:40,989|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 1.
+08-Dec-21 12:03:40,990|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 2.
+08-Dec-21 12:03:40,991|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 3.
+08-Dec-21 12:03:40,992|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 4.
+08-Dec-21 12:03:40,993|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 5.
+08-Dec-21 12:03:40,994|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 6.
+08-Dec-21 12:03:40,995|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 7.
+08-Dec-21 12:03:40,996|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 8.
+08-Dec-21 12:03:40,997|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 9.
+08-Dec-21 12:03:40,998|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 10.
+08-Dec-21 12:03:40,998|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 11.
+08-Dec-21 12:03:40,999|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 12.
+08-Dec-21 12:03:41,005|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 1.
+08-Dec-21 12:03:41,007|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 2.
+08-Dec-21 12:03:41,013|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 3.
+08-Dec-21 12:03:41,015|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 4.
+08-Dec-21 12:03:41,016|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 5.
+08-Dec-21 12:03:41,017|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 6.
+08-Dec-21 12:03:41,018|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 7.
+08-Dec-21 12:03:41,019|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 8.
+08-Dec-21 12:03:41,021|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 9.
+08-Dec-21 12:03:41,022|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 10.
+08-Dec-21 12:03:41,024|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 11.
+08-Dec-21 12:03:41,030|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 12.
+08-Dec-21 12:03:41,034|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 1.
+08-Dec-21 12:03:41,035|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 2.
+08-Dec-21 12:03:41,036|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 3.
+08-Dec-21 12:03:41,037|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 4.
+08-Dec-21 12:03:41,046|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 5.
+08-Dec-21 12:03:41,048|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 6.
+08-Dec-21 12:03:41,049|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 7.
+08-Dec-21 12:03:41,050|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 8.
+08-Dec-21 12:03:41,051|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 9.
+08-Dec-21 12:03:41,056|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 10.
+08-Dec-21 12:03:41,057|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 11.
+08-Dec-21 12:03:41,068|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 12.
+08-Dec-21 12:03:41,069|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 1.
+08-Dec-21 12:03:41,071|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 2.
+08-Dec-21 12:03:41,072|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 3.
+08-Dec-21 12:03:41,074|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 4.
+08-Dec-21 12:03:41,078|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 5.
+08-Dec-21 12:03:41,080|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 6.
+08-Dec-21 12:03:41,080|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 7.
+08-Dec-21 12:03:41,081|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 8.
+08-Dec-21 12:03:41,082|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 9.
+08-Dec-21 12:03:41,084|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 10.
+08-Dec-21 12:03:41,085|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 11.
+08-Dec-21 12:03:41,089|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 12.
+08-Dec-21 12:03:41,092|INFO |L.init             |main                       |Lightstreamer Server initialized.
+08-Dec-21 12:03:41,093|INFO |L.init             |main                       |Lightstreamer Server 7.2.0 build 2001 starting...
+08-Dec-21 12:03:41,105|INFO |L.init             |r Lightstreamer HTTP Server|Session creation on socket Lightstreamer HTTP Server bound to any queue limits for SERVER pool.
+08-Dec-21 12:03:41,106|INFO |L.init             |main                       |Server "Lightstreamer HTTP Server" listening to *:9099 ...
+08-Dec-21 12:03:41,581|INFO |streamerMonitorText|Timer-1                    |Total threads = 141, Total heap = 512753664 (free = 483920096), Sessions = 0 (max = 0, refused = 0), New sessions = [+0, -0], Connections = 0 (max = 0), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 0 (for 0 subscriptions), Inbound throughput = 0 updates/s (pre-filtered = 0), Outbound throughput = 0 updates/s (0 kbit/s, max = 0), Lost updates = 0 (total = 0), Total bytes sent = 0, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 12:04:28,669|INFO |L.requests         |SERVER POOLED THREAD 9     |Serving request: /lightstreamer/dashboard/create_session.txt?LS_protocol=TLCP-2.1.0 --> LS_phase=9501&LS_cause=new.failure.status0&LS_polling=true&LS_polling_millis=0&LS_idle_millis=0&LS_cid=pcYgxn8m8 feOojyA1U661i3g2.pz47Af6k&LS_requested_max_bandwidth=100&LS_adapter_set=MONITOR& on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61670
+08-Dec-21 12:04:28,721|INFO |L.requests         |SERVER POOLED THREAD 9     |Starting new session: Sb4c67900c9c45a35Mff3T0428720 (javascript_client 8.0.3 build 1800) on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61670
+08-Dec-21 12:04:28,732|INFO |L.pump             |SERVER POOLED THREAD 9     |Session Sb4c67900c9c45a35Mff3T0428720 started.
+08-Dec-21 12:04:28,782|INFO |L.requests         |SERVER POOLED THREAD 9     |Serving request: bind_session -> LS_session=Sb4c67900c9c45a35Mff3T0428720&LS_phase=9503&LS_cause=loop1&LS_keepalive_millis=5000& on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:28,783|INFO |L.requests         |SERVER POOLED THREAD 9     |Attaching session: Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,505|INFO |L.requests         |SERVER POOLED THREAD 9     |Serving request: control -> LS_mode=MERGE&LS_group=monitor_statistics&LS_schema=CLIENTS.SESSIONS%20CLIENTS.STREAMING_SESSIONS%20CLIENTS.POLLING_SESSIONS%20CLIENTS.CONNECTIONS%20PUSH_NOTIFICATIONS.DEVICES%20MEMORY.TOTAL%20POOL.QUEUE%20THREADS%20POOL.ACTIVE%20POOL.WAITING%20MEMORY.FREE%20POOL.SIZE%20CLIENTS.MAX_SESSIONS%20CLIENTS.MAX_CONNECTIONS%20PUSH_NOTIFICATIONS.MAX_DEVICES%20CLIENTS.ITEM_SUBSCR%20ITEMS.TOTAL%20UPDATES.EVENTS_SEC%20UPDATES.TOTAL_OUT%20UPDATES.TOTAL_LOST%20BANDWIDTH.CURRENT%20BANDWIDTH.TOTAL_BYTES%20PUSH_NOTIFICATIONS.NOTIFICATIONS_SEC%20PUSH_NOTIFICATIONS.TOTAL_SENT%20PUSH_NOTIFICATIONS.CURRENT_THROUGHPUT%20PUSH_NOTIFICATIONS.TOTAL_BYTES%20MESSAGES.EVENTS_SEC%20MESSAGES.TOTAL_HANDLED%20MESSAGES.CURRENT_THROUGHPUT%20MESSAGES.TOTAL_BYTES%20ITEMS.EVENTS_SEC%20UPDATES.TOTAL_IN&LS_snapshot=true&LS_subId=7&LS_op=add&LS_reqId=13&LS_session=Sb4c67900c9c45a35Mff3T0428720& on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,505|INFO |L.requests         |SERVER POOLED THREAD 10    |Serving multiple request: control -> {5 subrequests} on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,506|INFO |L.requests         |SERVER POOLED THREAD 10    |Subrequest 1: LS_mode=MERGE&LS_group=monitor_identification&LS_schema=STARTUP_TIME%20EDITION%20LICENSE_TYPE%20LOCAL_HOST%20VERSION%20LOCAL_IP%20CLIENT_ID%20DASHBOARD_IS_PUBLIC&LS_snapshot=true&LS_subId=8&LS_op=add&LS_reqId=15& LS_session:Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,506|INFO |L.requests         |SERVER POOLED THREAD 10    |Subrequest 2: LS_mode=MERGE&LS_group=monitor_local_socket&LS_schema=SERVER_NAME%20LOCAL_PORT&LS_snapshot=true&LS_subId=9&LS_op=add&LS_reqId=17& LS_session:Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,506|INFO |L.requests         |SERVER POOLED THREAD 10    |Subrequest 3: LS_mode=MERGE&LS_group=monitor_identification&LS_schema=EDITION%20LICENSE_TYPE%20CLIENT_ID&LS_snapshot=true&LS_subId=10&LS_op=add&LS_reqId=19& LS_session:Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,506|INFO |L.requests         |SERVER POOLED THREAD 10    |Subrequest 4: LS_mode=MERGE&LS_group=monitor_details&LS_schema=MAX_SSNS%20IS_MPN%20EXP_DATE%20MAX_RATE%20BAND%20TLS%20JMX%20VAL_TYPE&LS_snapshot=true&LS_subId=11&LS_op=add&LS_reqId=21& LS_session:Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,506|INFO |L.requests         |SERVER POOLED THREAD 10    |Subrequest 5: LS_mode=COMMAND&LS_group=monitor_client_libs&LS_schema=key%20command%20lib_ext%20free%20demo%20eval%20startup%20noprod-lim%20noprod-full%20prod%20standby%20ordinal&LS_snapshot=true&LS_subId=12&LS_op=add&LS_reqId=23& LS_session:Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,514|INFO |L.requests         |SERVER POOLED THREAD 10    |Controlling session: Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,514|INFO |L.requests         |SERVER POOLED THREAD 8     |Controlling session: Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,514|INFO |L.requests         |SERVER POOLED THREAD 9     |Controlling session: Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,514|INFO |L.requests         |SERVER POOLED THREAD 7     |Controlling session: Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,514|INFO |L.requests         |SERVER POOLED THREAD 3     |Controlling session: Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,514|INFO |L.requests         |SERVER POOLED THREAD 6     |Controlling session: Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,645|INFO |L.requests         |SERVER POOLED THREAD 1     |Serving request: control -> LS_op=destroy&LS_session=Sb4c67900c9c45a35Mff3T0428720&LS_reqId=25&LS_cause=suicide& on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,645|INFO |L.requests         |SERVER POOLED THREAD 1     |Destroying session: Sb4c67900c9c45a35Mff3T0428720 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61671
+08-Dec-21 12:04:29,646|INFO |L.pump             |SERVER POOLED THREAD 1     |Closed session Sb4c67900c9c45a35Mff3T0428720 with internal cause code: 31 (Destroy invoked by client).
+08-Dec-21 12:04:29,646|INFO |L.requests         |SERVER POOLED THREAD 1     |Session Sb4c67900c9c45a35Mff3T0428720 closed after 926 ms, initiated on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61670
+08-Dec-21 12:04:30,254|INFO |L.requests         |SERVER POOLED THREAD 1     |Serving request: /lightstreamer/dashboard/create_session.txt?LS_protocol=TLCP-2.1.0 --> LS_phase=5301&LS_cause=new.api&LS_polling=true&LS_polling_millis=0&LS_idle_millis=0&LS_cid=pcYgxn8m8 feOojyA1U661i3g2.pz47Af6k&LS_requested_max_bandwidth=100&LS_adapter_set=MONITOR& on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61670
+08-Dec-21 12:04:30,255|INFO |L.requests         |SERVER POOLED THREAD 1     |Starting new session: S13540542c586453dMff3T0430255 (javascript_client 8.0.3 build 1800) on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61670
+08-Dec-21 12:04:30,255|INFO |L.pump             |SERVER POOLED THREAD 1     |Session S13540542c586453dMff3T0430255 started.
+08-Dec-21 12:04:30,275|INFO |L.requests         |SERVER POOLED THREAD 1     |Serving request: bind_session -> LS_session=S13540542c586453dMff3T0430255&LS_phase=5303&LS_cause=loop1& on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,275|INFO |L.requests         |SERVER POOLED THREAD 1     |Attaching session: S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,478|INFO |L.requests         |SERVER POOLED THREAD 1     |Serving request: control -> LS_mode=MERGE&LS_group=monitor_statistics&LS_schema=CLIENTS.SESSIONS%20CLIENTS.STREAMING_SESSIONS%20CLIENTS.POLLING_SESSIONS%20CLIENTS.CONNECTIONS%20PUSH_NOTIFICATIONS.DEVICES%20MEMORY.TOTAL%20POOL.QUEUE%20THREADS%20POOL.ACTIVE%20POOL.WAITING%20MEMORY.FREE%20POOL.SIZE%20CLIENTS.MAX_SESSIONS%20CLIENTS.MAX_CONNECTIONS%20PUSH_NOTIFICATIONS.MAX_DEVICES%20CLIENTS.ITEM_SUBSCR%20ITEMS.TOTAL%20UPDATES.EVENTS_SEC%20UPDATES.TOTAL_OUT%20UPDATES.TOTAL_LOST%20BANDWIDTH.CURRENT%20BANDWIDTH.TOTAL_BYTES%20PUSH_NOTIFICATIONS.NOTIFICATIONS_SEC%20PUSH_NOTIFICATIONS.TOTAL_SENT%20PUSH_NOTIFICATIONS.CURRENT_THROUGHPUT%20PUSH_NOTIFICATIONS.TOTAL_BYTES%20MESSAGES.EVENTS_SEC%20MESSAGES.TOTAL_HANDLED%20MESSAGES.CURRENT_THROUGHPUT%20MESSAGES.TOTAL_BYTES%20ITEMS.EVENTS_SEC%20UPDATES.TOTAL_IN&LS_snapshot=true&LS_subId=1&LS_op=add&LS_reqId=1&LS_session=S13540542c586453dMff3T0430255& on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,478|INFO |L.requests         |SERVER POOLED THREAD 8     |Controlling session: S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,480|INFO |L.requests         |SERVER POOLED THREAD 8     |Serving multiple request: control -> {3 subrequests} on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,480|INFO |L.requests         |SERVER POOLED THREAD 8     |Subrequest 1: LS_mode=MERGE&LS_group=monitor_identification&LS_schema=STARTUP_TIME%20EDITION%20LICENSE_TYPE%20LOCAL_HOST%20VERSION%20LOCAL_IP%20CLIENT_ID%20DASHBOARD_IS_PUBLIC&LS_snapshot=true&LS_subId=2&LS_op=add&LS_reqId=3& LS_session:S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,481|INFO |L.requests         |SERVER POOLED THREAD 8     |Subrequest 2: LS_mode=MERGE&LS_group=monitor_local_socket&LS_schema=SERVER_NAME%20LOCAL_PORT&LS_snapshot=true&LS_subId=3&LS_op=add&LS_reqId=5& LS_session:S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,481|INFO |L.requests         |SERVER POOLED THREAD 8     |Subrequest 3: LS_mode=MERGE&LS_group=monitor_identification&LS_schema=EDITION%20LICENSE_TYPE%20CLIENT_ID&LS_snapshot=true&LS_subId=4&LS_op=add&LS_reqId=7& LS_session:S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,481|INFO |L.requests         |SERVER POOLED THREAD 8     |Controlling session: S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,481|INFO |L.requests         |SERVER POOLED THREAD 5     |Controlling session: S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,481|INFO |L.requests         |SERVER POOLED THREAD 1     |Controlling session: S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,544|INFO |L.requests         |SERVER POOLED THREAD 1     |Serving request: control -> LS_mode=MERGE&LS_group=monitor_details&LS_schema=MAX_SSNS%20IS_MPN%20EXP_DATE%20MAX_RATE%20BAND%20TLS%20JMX%20VAL_TYPE&LS_snapshot=true&LS_subId=5&LS_op=add&LS_reqId=9& LS_session:S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,544|INFO |L.requests         |SERVER POOLED THREAD 1     |Controlling session: S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,546|INFO |L.requests         |SERVER POOLED THREAD 5     |Serving request: control -> LS_mode=COMMAND&LS_group=monitor_client_libs&LS_schema=key%20command%20lib_ext%20free%20demo%20eval%20startup%20noprod-lim%20noprod-full%20prod%20standby%20ordinal&LS_snapshot=true&LS_subId=6&LS_op=add&LS_reqId=11& LS_session:S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:04:30,546|INFO |L.requests         |SERVER POOLED THREAD 1     |Controlling session: S13540542c586453dMff3T0430255 on "Lightstreamer HTTP Server" from 0:0:0:0:0:0:0:1:61675
+08-Dec-21 12:05:42,007|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299892736 (free = 232052544), Sessions = 1 (max = 1, refused = 0), New sessions = [+2, -1], Connections = 1 (max = 3), New connections = [+4, -3], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.37 kbit/s, max = 6.49), Lost updates = 0 (total = 0), Total bytes sent = 4524, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 12:07:42,334|INFO |streamerMonitorText|Timer-1                    |Total threads = 150, Total heap = 299892736 (free = 227487400), Sessions = 1 (max = 1, refused = 0), New sessions = [+0, -0], Connections = 1 (max = 3), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 5 (for 6 subscriptions), Inbound throughput = 0.5 updates/s (pre-filtered = 0.5), Outbound throughput = 0.5 updates/s (0.35 kbit/s, max = 6.49), Lost updates = 0 (total = 0), Total bytes sent = 6739, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 12:09:00,259|INFO |L.P.D.r.notify     |RLD.DEFAULT Notify Receiver|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 12:09:00,259|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Reply Receiver|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 12:09:00,260|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Trying to send close message from request sender 'PROXY_HELLOWORLD.DEFAULT-1'
+08-Dec-21 12:09:00,260|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Failed to send close message from request sender 'PROXY_HELLOWORLD.DEFAULT-1'
+08-Dec-21 12:09:00,261|FATAL|L.P.DEFAULT        |ORLD.DEFAULT Reply Receiver|I/O Exception caught while reading/writing from/to streams on PROXY_HELLOWORLD.DEFAULT: Connection reset, aborting...
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 12:09:00,261|FATAL|L.P.DEFAULT        |RLD.DEFAULT Notify Receiver|I/O Exception caught while reading/writing from/to streams on PROXY_HELLOWORLD.DEFAULT: Connection reset, aborting...
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 12:09:00,264|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' stopped
+08-Dec-21 12:09:00,265|ERROR|L.kernel           |ORLD.DEFAULT Reply Receiver|Failure invoked by Data Adapter PROXY_HELLOWORLD.DEFAULT:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 12:09:00,266|ERROR|L.kernel           |RLD.DEFAULT Notify Receiver|Failure invoked by Data Adapter PROXY_HELLOWORLD.DEFAULT:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 12:09:00,266|INFO |L.P.D.r.reply      |ORLD.DEFAULT Request Sender|Reply receiver 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 12:09:00,265|FATAL|L.init             |ORLD.DEFAULT Reply Receiver|Failure in a Data Adapter.
+08-Dec-21 12:09:00,266|FATAL|L.init             |RLD.DEFAULT Notify Receiver|Failure in a Data Adapter.
+08-Dec-21 12:09:00,267|INFO |L.init             |LightstreamerShutdownHook  |Server shutdown requested.
+08-Dec-21 12:09:00,268|INFO |L.init             |LightstreamerShutdownHook  |Exiting.....
+08-Dec-21 15:14:11,804|INFO |L.init             |main                       |Lightstreamer Server 7.2.0 build 2001
+08-Dec-21 15:14:11,807|INFO |L.init             |main                       |Server launched on Java Virtual Machine: Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 25.311-b11, 1.8.0_311-b11 on Windows 10
+08-Dec-21 15:14:11,821|INFO |L.license          |main                       |License correctly bound with the following parameter(s):
+08-Dec-21 15:14:11,821|INFO |L.license          |main                       |        Product                          : LS-SERVER
+08-Dec-21 15:14:11,822|INFO |L.license          |main                       |        Edition                          : ENTERPRISE
+08-Dec-21 15:14:11,822|INFO |L.license          |main                       |        License Type                     : DEMO
+08-Dec-21 15:14:11,822|INFO |L.license          |main                       |        Contract Id                      : DEMO
+08-Dec-21 15:14:11,822|INFO |L.init             |main                       |        Mobile Push Notifications        : enabled
+08-Dec-21 15:14:11,822|INFO |L.init             |main                       |        Max Message Rate (Downstream)    : unlimited
+08-Dec-21 15:14:11,823|INFO |L.init             |main                       |        JMX Management API               : enabled
+08-Dec-21 15:14:11,823|INFO |L.init             |main                       |        Bandwidth Control                : enabled
+08-Dec-21 15:14:11,823|INFO |L.init             |main                       |        TLS/SSL Support                  : enabled
+08-Dec-21 15:14:11,823|INFO |L.init             |main                       |        Web Client API                   : enabled (all versions)
+08-Dec-21 15:14:11,823|INFO |L.init             |main                       |        Android Client API               : enabled (all versions)
+08-Dec-21 15:14:11,823|INFO |L.init             |main                       |        iOS Client API                   : enabled (all versions)
+08-Dec-21 15:14:11,823|INFO |L.init             |main                       |        Java SE Client API               : enabled (all versions)
+08-Dec-21 15:14:11,824|INFO |L.init             |main                       |        .NET Standard Client API         : enabled (all versions)
+08-Dec-21 15:14:11,824|INFO |L.init             |main                       |        Node.js Client API               : enabled (all versions)
+08-Dec-21 15:14:11,825|INFO |L.init             |main                       |        macOS Client API                 : enabled (all versions)
+08-Dec-21 15:14:11,825|INFO |L.init             |main                       |        tvOS Client API                  : enabled (all versions)
+08-Dec-21 15:14:11,825|INFO |L.init             |main                       |        watchOS Client API               : enabled (all versions)
+08-Dec-21 15:14:11,826|INFO |L.init             |main                       |        Generic Clients (TLCP Protocol)  : enabled (all versions)
+08-Dec-21 15:14:11,826|INFO |L.init             |main                       |        [Legacy] BlackBerry Client API   : enabled (all versions)
+08-Dec-21 15:14:11,826|INFO |L.init             |main                       |        [Legacy] Flash Client API        : enabled (all versions)
+08-Dec-21 15:14:11,827|INFO |L.init             |main                       |        [Legacy] Flex and AIR Client API : enabled (all versions)
+08-Dec-21 15:14:11,827|INFO |L.init             |main                       |        [Legacy] Java ME Client API      : enabled (all versions)
+08-Dec-21 15:14:11,827|INFO |L.init             |main                       |        [Legacy] Silverlight Client API  : enabled (all versions)
+08-Dec-21 15:14:11,827|WARN |L.init             |main                       |Lightstreamer Server is running with a Demo license, which has a limit of 20 concurrent users and can be used for evaluation, development, and testing, but not for production. If you need to evaluate Lightstreamer Server without this user limit, or need any information on the other license types, please contact info@lightstreamer.com
+08-Dec-21 15:14:12,144|INFO |L.init             |main                       |Number of detected cores: 12
+08-Dec-21 15:14:12,144|INFO |L.init             |main                       |Lightstreamer Server starting in ENTERPRISE edition.
+08-Dec-21 15:14:12,382|INFO |L.init             |main                       |Started RMI server for JMX on port 8888
+08-Dec-21 15:14:12,384|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) started...
+08-Dec-21 15:14:12,429|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) successful.
+08-Dec-21 15:14:12,430|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 started...
+08-Dec-21 15:14:12,439|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 successful.
+08-Dec-21 15:14:12,461|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) started...
+08-Dec-21 15:14:12,465|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) successful.
+08-Dec-21 15:14:12,467|INFO |L.init.connections |main                       |SERVER pool size set by default at 1000.
+08-Dec-21 15:14:12,468|INFO |L.init.connections |main                       |ACCEPT pool size set by default at 12.
+08-Dec-21 15:14:12,474|INFO |L.scheduler        |main                       |Creating passthrough checker on ACCEPT
+08-Dec-21 15:14:12,484|INFO |L.scheduler        |main                       |Creating checker for 100 on SERVER
+08-Dec-21 15:14:12,484|INFO |L.scheduler        |main                       |Importing checkers from SERVER to ACCEPT
+08-Dec-21 15:14:12,484|INFO |L.scheduler        |main                       |Adding checker SERVER to ACCEPT
+08-Dec-21 15:14:12,486|INFO |L.init.connections |main                       |Queue limit checks for SERVER pool added to checks for ACCEPT pool.
+08-Dec-21 15:14:12,487|INFO |L.scheduler        |main                       |Creating passthrough checker on PRESTARTED SESSIONS
+08-Dec-21 15:14:12,518|INFO |L.i.subscriptions  |main                       |data_provider element without name attribute; using DEFAULT as the default name.
+08-Dec-21 15:14:12,529|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+08-Dec-21 15:14:12,529|INFO |L.i.subscriptions  |Init for WELCOME           |Loading Metadata Adapter for Adapter Set WELCOME
+08-Dec-21 15:14:12,530|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Finished loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+08-Dec-21 15:14:12,537|INFO |L.i.subscriptions  |or PROXY_HELLOWORLD.DEFAULT|Loading Data Adapter PROXY_HELLOWORLD.DEFAULT
+08-Dec-21 15:14:12,545|INFO |reamerProxyAdapters|or PROXY_HELLOWORLD.DEFAULT|Proxy Data Adapter starting
+08-Dec-21 15:14:12,550|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connecting...
+08-Dec-21 15:14:12,552|INFO |L.P.D.transport    |uest/Reply Socket Connector|Waiting for a connection on port 6661...
+08-Dec-21 15:14:12,552|INFO |L.P.D.transport    |Notify Socket Connector    |Waiting for a connection on port 6662...
+08-Dec-21 15:14:12,785|INFO |L.i.subscriptions  |Init for WELCOME           |Finished loading Metadata Adapter for Adapter Set WELCOME
+08-Dec-21 15:14:12,786|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Loading Data Adapter WELCOME.TELEMETRY
+08-Dec-21 15:14:12,786|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Loading Data Adapter WELCOME.CHAT
+08-Dec-21 15:14:12,786|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Loading Data Adapter WELCOME.STOCKS
+08-Dec-21 15:14:12,786|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Loading Data Adapter WELCOME.ROOMBALL
+08-Dec-21 15:14:12,788|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Finished loading Data Adapter WELCOME.TELEMETRY
+08-Dec-21 15:14:12,789|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Finished loading Data Adapter WELCOME.ROOMBALL
+08-Dec-21 15:14:12,792|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Finished loading Data Adapter WELCOME.CHAT
+08-Dec-21 15:14:12,792|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Finished loading Data Adapter WELCOME.STOCKS
+08-Dec-21 15:14:36,185|INFO |L.P.D.transport    |pool-3-thread-1            |Accepted connection (1) on the Request/Reply socket on port 6661 from /0:0:0:0:0:0:0:1:63470
+08-Dec-21 15:14:36,185|INFO |L.P.D.transport    |pool-2-thread-1            |Accepted connection (1) on the Notify socket on port 6662 from /0:0:0:0:0:0:0:1:63471
+08-Dec-21 15:14:36,190|INFO |L.P.D.r.notify     |RLD.DEFAULT Notify Receiver|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 15:14:36,192|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 15:14:36,193|INFO |L.P.D.r.reply      |ORLD.DEFAULT Reply Receiver|Reply receiver 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 15:14:36,194|INFO |L.P.D.transport    |pool-2-thread-1            |Connected (1)  on port 6662 from /0:0:0:0:0:0:0:1:63471
+08-Dec-21 15:14:36,194|INFO |L.P.D.transport    |pool-3-thread-1            |Connected (1)  on port 6661 from /0:0:0:0:0:0:0:1:63470
+08-Dec-21 15:14:36,195|INFO |L.P.D.transport    |pool-3-thread-1            |Stopped waiting on port 6661
+08-Dec-21 15:14:36,195|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Stopped waiting on port 6661
+08-Dec-21 15:14:36,195|INFO |L.P.D.transport    |pool-2-thread-1            |Stopped waiting on port 6662
+08-Dec-21 15:14:36,195|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Stopped waiting on port 6662
+08-Dec-21 15:14:36,195|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connected
+08-Dec-21 15:14:36,242|INFO |L.P.DEFAULT        |or PROXY_HELLOWORLD.DEFAULT|Received Remote Server protocol version as 1.8.3: accepted.
+08-Dec-21 15:14:36,242|INFO |L.P.DEFAULT        |or PROXY_HELLOWORLD.DEFAULT|Proxy Data Adapter started with protocol version 1.8.3
+08-Dec-21 15:14:36,243|INFO |L.i.subscriptions  |or PROXY_HELLOWORLD.DEFAULT|Finished loading Data Adapter PROXY_HELLOWORLD.DEFAULT
+08-Dec-21 15:14:36,247|INFO |L.init.preprocessor|main                       |Events pool size set by default at 12.
+08-Dec-21 15:14:36,250|INFO |L.init.preprocessor|main                       |Snapshot pool size set by default at 12.
+08-Dec-21 15:14:36,290|WARN |L.init.monitoring  |main                       |THE MONITORING DASHBOARD IS NOT PASSWORD PROTECTED. Remember to protect it in production! For more details, see PRODUCTION_SECURITY_NOTES.TXT.
+08-Dec-21 15:14:36,309|INFO |L.init.pump        |main                       |Pump pool size set by default at 12.
+08-Dec-21 15:14:36,309|INFO |L.scheduler        |main                       |Creating passthrough checker on PUMP
+08-Dec-21 15:14:36,315|INFO |L.init.connections |main                       |Selector pool size set by default at 12.
+08-Dec-21 15:14:36,315|INFO |L.init.connections |main                       |Selector maximum load set by default at 0.
+08-Dec-21 15:14:36,341|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 1.
+08-Dec-21 15:14:36,343|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 2.
+08-Dec-21 15:14:36,344|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 3.
+08-Dec-21 15:14:36,346|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 4.
+08-Dec-21 15:14:36,347|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 5.
+08-Dec-21 15:14:36,348|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 6.
+08-Dec-21 15:14:36,349|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 7.
+08-Dec-21 15:14:36,350|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 8.
+08-Dec-21 15:14:36,351|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 9.
+08-Dec-21 15:14:36,352|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 10.
+08-Dec-21 15:14:36,353|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 11.
+08-Dec-21 15:14:36,355|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 12.
+08-Dec-21 15:14:36,365|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 1.
+08-Dec-21 15:14:36,366|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 2.
+08-Dec-21 15:14:36,367|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 3.
+08-Dec-21 15:14:36,368|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 4.
+08-Dec-21 15:14:36,369|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 5.
+08-Dec-21 15:14:36,371|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 6.
+08-Dec-21 15:14:36,372|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 7.
+08-Dec-21 15:14:36,373|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 8.
+08-Dec-21 15:14:36,376|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 9.
+08-Dec-21 15:14:36,377|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 10.
+08-Dec-21 15:14:36,379|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 11.
+08-Dec-21 15:14:36,380|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 12.
+08-Dec-21 15:14:36,384|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 1.
+08-Dec-21 15:14:36,386|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 2.
+08-Dec-21 15:14:36,387|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 3.
+08-Dec-21 15:14:36,388|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 4.
+08-Dec-21 15:14:36,389|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 5.
+08-Dec-21 15:14:36,391|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 6.
+08-Dec-21 15:14:36,393|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 7.
+08-Dec-21 15:14:36,394|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 8.
+08-Dec-21 15:14:36,395|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 9.
+08-Dec-21 15:14:36,396|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 10.
+08-Dec-21 15:14:36,397|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 11.
+08-Dec-21 15:14:36,398|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 12.
+08-Dec-21 15:14:36,398|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 1.
+08-Dec-21 15:14:36,399|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 2.
+08-Dec-21 15:14:36,401|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 3.
+08-Dec-21 15:14:36,402|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 4.
+08-Dec-21 15:14:36,404|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 5.
+08-Dec-21 15:14:36,404|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 6.
+08-Dec-21 15:14:36,405|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 7.
+08-Dec-21 15:14:36,406|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 8.
+08-Dec-21 15:14:36,407|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 9.
+08-Dec-21 15:14:36,408|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 10.
+08-Dec-21 15:14:36,409|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 11.
+08-Dec-21 15:14:36,410|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 12.
+08-Dec-21 15:14:36,413|INFO |L.init             |main                       |Lightstreamer Server initialized.
+08-Dec-21 15:14:36,414|INFO |L.init             |main                       |Lightstreamer Server 7.2.0 build 2001 starting...
+08-Dec-21 15:14:36,441|INFO |L.init             |r Lightstreamer HTTP Server|Session creation on socket Lightstreamer HTTP Server bound to any queue limits for SERVER pool.
+08-Dec-21 15:14:36,443|INFO |L.init             |main                       |Server "Lightstreamer HTTP Server" listening to *:9099 ...
+08-Dec-21 15:14:38,261|INFO |streamerMonitorText|Timer-1                    |Total threads = 142, Total heap = 512753664 (free = 484187360), Sessions = 0 (max = 0, refused = 0), New sessions = [+0, -0], Connections = 0 (max = 0), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 0 (for 0 subscriptions), Inbound throughput = 0 updates/s (pre-filtered = 0), Outbound throughput = 0 updates/s (0 kbit/s, max = 0), Lost updates = 0 (total = 0), Total bytes sent = 0, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 15:16:38,733|INFO |streamerMonitorText|Timer-1                    |Total threads = 145, Total heap = 512753664 (free = 454846248), Sessions = 0 (max = 0, refused = 0), New sessions = [+0, -0], Connections = 0 (max = 0), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 0 (for 0 subscriptions), Inbound throughput = 0 updates/s (pre-filtered = 0), Outbound throughput = 0 updates/s (0 kbit/s, max = 0), Lost updates = 0 (total = 0), Total bytes sent = 0, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 15:17:56,531|INFO |L.P.D.r.notify     |RLD.DEFAULT Notify Receiver|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 15:17:56,531|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Reply Receiver|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 15:17:56,532|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Trying to send close message from request sender 'PROXY_HELLOWORLD.DEFAULT-1'
+08-Dec-21 15:17:56,533|FATAL|L.P.DEFAULT        |ORLD.DEFAULT Reply Receiver|I/O Exception caught while reading/writing from/to streams on PROXY_HELLOWORLD.DEFAULT: Connection reset, aborting...
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 15:17:56,533|FATAL|L.P.DEFAULT        |RLD.DEFAULT Notify Receiver|I/O Exception caught while reading/writing from/to streams on PROXY_HELLOWORLD.DEFAULT: Connection reset, aborting...
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 15:17:56,533|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Failed to send close message from request sender 'PROXY_HELLOWORLD.DEFAULT-1'
+08-Dec-21 15:17:56,533|ERROR|L.kernel           |ORLD.DEFAULT Reply Receiver|Failure invoked by Data Adapter PROXY_HELLOWORLD.DEFAULT:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 15:17:56,534|ERROR|L.kernel           |RLD.DEFAULT Notify Receiver|Failure invoked by Data Adapter PROXY_HELLOWORLD.DEFAULT:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 15:17:56,534|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' stopped
+08-Dec-21 15:17:56,534|FATAL|L.init             |ORLD.DEFAULT Reply Receiver|Failure in a Data Adapter.
+08-Dec-21 15:17:56,534|FATAL|L.init             |RLD.DEFAULT Notify Receiver|Failure in a Data Adapter.
+08-Dec-21 15:17:56,535|INFO |L.P.D.r.reply      |ORLD.DEFAULT Request Sender|Reply receiver 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 15:17:56,542|INFO |L.init             |LightstreamerShutdownHook  |Server shutdown requested.
+08-Dec-21 15:17:56,543|INFO |L.init             |LightstreamerShutdownHook  |Exiting.....
+08-Dec-21 15:18:17,825|INFO |L.init             |main                       |Lightstreamer Server 7.2.0 build 2001
+08-Dec-21 15:18:17,828|INFO |L.init             |main                       |Server launched on Java Virtual Machine: Oracle Corporation, Java HotSpot(TM) 64-Bit Server VM, 25.311-b11, 1.8.0_311-b11 on Windows 10
+08-Dec-21 15:18:17,842|INFO |L.license          |main                       |License correctly bound with the following parameter(s):
+08-Dec-21 15:18:17,842|INFO |L.license          |main                       |        Product                          : LS-SERVER
+08-Dec-21 15:18:17,842|INFO |L.license          |main                       |        Edition                          : ENTERPRISE
+08-Dec-21 15:18:17,842|INFO |L.license          |main                       |        License Type                     : DEMO
+08-Dec-21 15:18:17,843|INFO |L.license          |main                       |        Contract Id                      : DEMO
+08-Dec-21 15:18:17,843|INFO |L.init             |main                       |        Mobile Push Notifications        : enabled
+08-Dec-21 15:18:17,843|INFO |L.init             |main                       |        Max Message Rate (Downstream)    : unlimited
+08-Dec-21 15:18:17,843|INFO |L.init             |main                       |        JMX Management API               : enabled
+08-Dec-21 15:18:17,843|INFO |L.init             |main                       |        Bandwidth Control                : enabled
+08-Dec-21 15:18:17,844|INFO |L.init             |main                       |        TLS/SSL Support                  : enabled
+08-Dec-21 15:18:17,844|INFO |L.init             |main                       |        Web Client API                   : enabled (all versions)
+08-Dec-21 15:18:17,844|INFO |L.init             |main                       |        Android Client API               : enabled (all versions)
+08-Dec-21 15:18:17,844|INFO |L.init             |main                       |        iOS Client API                   : enabled (all versions)
+08-Dec-21 15:18:17,844|INFO |L.init             |main                       |        Java SE Client API               : enabled (all versions)
+08-Dec-21 15:18:17,845|INFO |L.init             |main                       |        .NET Standard Client API         : enabled (all versions)
+08-Dec-21 15:18:17,845|INFO |L.init             |main                       |        Node.js Client API               : enabled (all versions)
+08-Dec-21 15:18:17,845|INFO |L.init             |main                       |        macOS Client API                 : enabled (all versions)
+08-Dec-21 15:18:17,846|INFO |L.init             |main                       |        tvOS Client API                  : enabled (all versions)
+08-Dec-21 15:18:17,846|INFO |L.init             |main                       |        watchOS Client API               : enabled (all versions)
+08-Dec-21 15:18:17,846|INFO |L.init             |main                       |        Generic Clients (TLCP Protocol)  : enabled (all versions)
+08-Dec-21 15:18:17,846|INFO |L.init             |main                       |        [Legacy] BlackBerry Client API   : enabled (all versions)
+08-Dec-21 15:18:17,847|INFO |L.init             |main                       |        [Legacy] Flash Client API        : enabled (all versions)
+08-Dec-21 15:18:17,847|INFO |L.init             |main                       |        [Legacy] Flex and AIR Client API : enabled (all versions)
+08-Dec-21 15:18:17,848|INFO |L.init             |main                       |        [Legacy] Java ME Client API      : enabled (all versions)
+08-Dec-21 15:18:17,849|INFO |L.init             |main                       |        [Legacy] Silverlight Client API  : enabled (all versions)
+08-Dec-21 15:18:17,850|WARN |L.init             |main                       |Lightstreamer Server is running with a Demo license, which has a limit of 20 concurrent users and can be used for evaluation, development, and testing, but not for production. If you need to evaluate Lightstreamer Server without this user limit, or need any information on the other license types, please contact info@lightstreamer.com
+08-Dec-21 15:18:18,174|INFO |L.init             |main                       |Number of detected cores: 12
+08-Dec-21 15:18:18,174|INFO |L.init             |main                       |Lightstreamer Server starting in ENTERPRISE edition.
+08-Dec-21 15:18:18,410|INFO |L.init             |main                       |Started RMI server for JMX on port 8888
+08-Dec-21 15:18:18,412|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) started...
+08-Dec-21 15:18:18,457|INFO |L.init             |ng of RMI Connector for JMX|Binding of RMI Connector for JMX on port 8888 (communication on port 8888) successful.
+08-Dec-21 15:18:18,458|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 started...
+08-Dec-21 15:18:18,468|INFO |L.init             |Connector reachability test|Test of reachability of the JMX Connector at localhost:8888 successful.
+08-Dec-21 15:18:18,490|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) started...
+08-Dec-21 15:18:18,493|INFO |L.init             |nnector for Platform mbeans|Binding of RMI Connector for Platform mbeans on port 8888 (communication on port 8888) successful.
+08-Dec-21 15:18:18,495|INFO |L.init.connections |main                       |SERVER pool size set by default at 1000.
+08-Dec-21 15:18:18,496|INFO |L.init.connections |main                       |ACCEPT pool size set by default at 12.
+08-Dec-21 15:18:18,502|INFO |L.scheduler        |main                       |Creating passthrough checker on ACCEPT
+08-Dec-21 15:18:18,512|INFO |L.scheduler        |main                       |Creating checker for 100 on SERVER
+08-Dec-21 15:18:18,513|INFO |L.scheduler        |main                       |Importing checkers from SERVER to ACCEPT
+08-Dec-21 15:18:18,513|INFO |L.scheduler        |main                       |Adding checker SERVER to ACCEPT
+08-Dec-21 15:18:18,514|INFO |L.init.connections |main                       |Queue limit checks for SERVER pool added to checks for ACCEPT pool.
+08-Dec-21 15:18:18,515|INFO |L.scheduler        |main                       |Creating passthrough checker on PRESTARTED SESSIONS
+08-Dec-21 15:18:18,546|INFO |L.i.subscriptions  |main                       |data_provider element without name attribute; using DEFAULT as the default name.
+08-Dec-21 15:18:18,557|INFO |L.i.subscriptions  |Init for WELCOME           |Loading Metadata Adapter for Adapter Set WELCOME
+08-Dec-21 15:18:18,557|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+08-Dec-21 15:18:18,564|INFO |L.i.subscriptions  |Init for PROXY_HELLOWORLD  |Finished loading Metadata Adapter for Adapter Set PROXY_HELLOWORLD
+08-Dec-21 15:18:18,565|INFO |L.i.subscriptions  |or PROXY_HELLOWORLD.DEFAULT|Loading Data Adapter PROXY_HELLOWORLD.DEFAULT
+08-Dec-21 15:18:18,574|INFO |reamerProxyAdapters|or PROXY_HELLOWORLD.DEFAULT|Proxy Data Adapter starting
+08-Dec-21 15:18:18,577|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connecting...
+08-Dec-21 15:18:18,580|INFO |L.P.D.transport    |Notify Socket Connector    |Waiting for a connection on port 6662...
+08-Dec-21 15:18:18,580|INFO |L.P.D.transport    |uest/Reply Socket Connector|Waiting for a connection on port 6661...
+08-Dec-21 15:18:18,811|INFO |L.i.subscriptions  |Init for WELCOME           |Finished loading Metadata Adapter for Adapter Set WELCOME
+08-Dec-21 15:18:18,812|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Loading Data Adapter WELCOME.TELEMETRY
+08-Dec-21 15:18:18,812|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Loading Data Adapter WELCOME.CHAT
+08-Dec-21 15:18:18,812|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Loading Data Adapter WELCOME.STOCKS
+08-Dec-21 15:18:18,812|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Loading Data Adapter WELCOME.ROOMBALL
+08-Dec-21 15:18:18,814|INFO |L.i.subscriptions  |Init for WELCOME.TELEMETRY |Finished loading Data Adapter WELCOME.TELEMETRY
+08-Dec-21 15:18:18,815|INFO |L.i.subscriptions  |Init for WELCOME.ROOMBALL  |Finished loading Data Adapter WELCOME.ROOMBALL
+08-Dec-21 15:18:18,818|INFO |L.i.subscriptions  |Init for WELCOME.CHAT      |Finished loading Data Adapter WELCOME.CHAT
+08-Dec-21 15:18:18,818|INFO |L.i.subscriptions  |Init for WELCOME.STOCKS    |Finished loading Data Adapter WELCOME.STOCKS
+08-Dec-21 15:18:25,348|INFO |L.P.D.transport    |pool-3-thread-1            |Accepted connection (1) on the Request/Reply socket on port 6661 from /0:0:0:0:0:0:0:1:63647
+08-Dec-21 15:18:25,348|INFO |L.P.D.transport    |pool-2-thread-1            |Accepted connection (1) on the Notify socket on port 6662 from /0:0:0:0:0:0:0:1:63648
+08-Dec-21 15:18:25,351|INFO |L.P.D.r.notify     |RLD.DEFAULT Notify Receiver|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 15:18:25,353|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 15:18:25,354|INFO |L.P.D.r.reply      |ORLD.DEFAULT Reply Receiver|Reply receiver 'PROXY_HELLOWORLD.DEFAULT-1' starting...
+08-Dec-21 15:18:25,354|INFO |L.P.D.transport    |pool-2-thread-1            |Connected (1)  on port 6662 from /0:0:0:0:0:0:0:1:63648
+08-Dec-21 15:18:25,354|INFO |L.P.D.transport    |pool-2-thread-1            |Stopped waiting on port 6662
+08-Dec-21 15:18:25,354|INFO |L.P.D.transport    |pool-3-thread-1            |Connected (1)  on port 6661 from /0:0:0:0:0:0:0:1:63647
+08-Dec-21 15:18:25,355|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Stopped waiting on port 6661
+08-Dec-21 15:18:25,355|INFO |L.P.D.transport    |pool-3-thread-1            |Stopped waiting on port 6661
+08-Dec-21 15:18:25,355|INFO |L.P.D.transport    |or PROXY_HELLOWORLD.DEFAULT|Connected
+08-Dec-21 15:18:25,387|INFO |L.P.DEFAULT        |or PROXY_HELLOWORLD.DEFAULT|Received Remote Server protocol version as 1.8.3: accepted.
+08-Dec-21 15:18:25,387|INFO |L.P.DEFAULT        |or PROXY_HELLOWORLD.DEFAULT|Proxy Data Adapter started with protocol version 1.8.3
+08-Dec-21 15:18:25,387|INFO |L.i.subscriptions  |or PROXY_HELLOWORLD.DEFAULT|Finished loading Data Adapter PROXY_HELLOWORLD.DEFAULT
+08-Dec-21 15:18:25,390|INFO |L.init.preprocessor|main                       |Events pool size set by default at 12.
+08-Dec-21 15:18:25,392|INFO |L.init.preprocessor|main                       |Snapshot pool size set by default at 12.
+08-Dec-21 15:18:25,429|WARN |L.init.monitoring  |main                       |THE MONITORING DASHBOARD IS NOT PASSWORD PROTECTED. Remember to protect it in production! For more details, see PRODUCTION_SECURITY_NOTES.TXT.
+08-Dec-21 15:18:25,448|INFO |L.init.pump        |main                       |Pump pool size set by default at 12.
+08-Dec-21 15:18:25,448|INFO |L.scheduler        |main                       |Creating passthrough checker on PUMP
+08-Dec-21 15:18:25,456|INFO |L.init.connections |main                       |Selector pool size set by default at 12.
+08-Dec-21 15:18:25,457|INFO |L.init.connections |main                       |Selector maximum load set by default at 0.
+08-Dec-21 15:18:25,485|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 1.
+08-Dec-21 15:18:25,489|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 2.
+08-Dec-21 15:18:25,491|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 3.
+08-Dec-21 15:18:25,493|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 4.
+08-Dec-21 15:18:25,496|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 5.
+08-Dec-21 15:18:25,498|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 6.
+08-Dec-21 15:18:25,498|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 7.
+08-Dec-21 15:18:25,499|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 8.
+08-Dec-21 15:18:25,500|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 9.
+08-Dec-21 15:18:25,501|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 10.
+08-Dec-21 15:18:25,502|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 11.
+08-Dec-21 15:18:25,503|INFO |L.init.ssl         |main                       |Created selector thread: NIO TLS/SSL HANDSHAKE SELECTOR 12.
+08-Dec-21 15:18:25,512|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 1.
+08-Dec-21 15:18:25,514|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 2.
+08-Dec-21 15:18:25,516|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 3.
+08-Dec-21 15:18:25,517|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 4.
+08-Dec-21 15:18:25,518|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 5.
+08-Dec-21 15:18:25,519|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 6.
+08-Dec-21 15:18:25,519|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 7.
+08-Dec-21 15:18:25,520|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 8.
+08-Dec-21 15:18:25,522|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 9.
+08-Dec-21 15:18:25,523|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 10.
+08-Dec-21 15:18:25,524|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 11.
+08-Dec-21 15:18:25,525|INFO |L.init.connections |main                       |Created selector thread: NIO WRITE SELECTOR 12.
+08-Dec-21 15:18:25,531|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 1.
+08-Dec-21 15:18:25,532|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 2.
+08-Dec-21 15:18:25,533|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 3.
+08-Dec-21 15:18:25,533|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 4.
+08-Dec-21 15:18:25,534|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 5.
+08-Dec-21 15:18:25,535|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 6.
+08-Dec-21 15:18:25,536|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 7.
+08-Dec-21 15:18:25,537|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 8.
+08-Dec-21 15:18:25,539|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 9.
+08-Dec-21 15:18:25,540|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 10.
+08-Dec-21 15:18:25,542|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 11.
+08-Dec-21 15:18:25,545|INFO |L.init.connections |main                       |Created selector thread: NIO READ SELECTOR 12.
+08-Dec-21 15:18:25,546|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 1.
+08-Dec-21 15:18:25,547|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 2.
+08-Dec-21 15:18:25,548|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 3.
+08-Dec-21 15:18:25,549|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 4.
+08-Dec-21 15:18:25,551|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 5.
+08-Dec-21 15:18:25,552|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 6.
+08-Dec-21 15:18:25,553|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 7.
+08-Dec-21 15:18:25,555|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 8.
+08-Dec-21 15:18:25,558|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 9.
+08-Dec-21 15:18:25,561|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 10.
+08-Dec-21 15:18:25,562|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 11.
+08-Dec-21 15:18:25,563|INFO |L.init.connections |main                       |Created selector thread: NIO CHECK SELECTOR 12.
+08-Dec-21 15:18:25,566|INFO |L.init             |main                       |Lightstreamer Server initialized.
+08-Dec-21 15:18:25,566|INFO |L.init             |main                       |Lightstreamer Server 7.2.0 build 2001 starting...
+08-Dec-21 15:18:25,578|INFO |L.init             |r Lightstreamer HTTP Server|Session creation on socket Lightstreamer HTTP Server bound to any queue limits for SERVER pool.
+08-Dec-21 15:18:25,579|INFO |L.init             |main                       |Server "Lightstreamer HTTP Server" listening to *:9099 ...
+08-Dec-21 15:18:26,236|INFO |streamerMonitorText|Timer-1                    |Total threads = 140, Total heap = 512753664 (free = 371806008), Sessions = 0 (max = 0, refused = 0), New sessions = [+0, -0], Connections = 0 (max = 0), New connections = [+0, -0], In-pool threads = 58, Active threads = 0, Available threads = 58, Queued tasks = 0, Pool queue wait = 0, NIO write queue = 0, NIO write queue wait = 0, NIO write selectors = 12, NIO total selectors = 48, Subscribed items = 0 (for 0 subscriptions), Inbound throughput = 0 updates/s (pre-filtered = 0), Outbound throughput = 0 updates/s (0 kbit/s, max = 0), Lost updates = 0 (total = 0), Total bytes sent = 0, Client messages throughput = 0 msgs/s (0 kbit/s, max = 0), Total messages handled = 0, Extra sleep = 0, Notify delay = 0
+08-Dec-21 15:19:23,911|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Reply Receiver|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 15:19:23,911|INFO |L.P.D.r.notify     |RLD.DEFAULT Notify Receiver|Notify receiver 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 15:19:23,911|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Trying to send close message from request sender 'PROXY_HELLOWORLD.DEFAULT-1'
+08-Dec-21 15:19:23,913|FATAL|L.P.DEFAULT        |ORLD.DEFAULT Reply Receiver|I/O Exception caught while reading/writing from/to streams on PROXY_HELLOWORLD.DEFAULT: Connection reset, aborting...
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 15:19:23,917|FATAL|L.P.DEFAULT        |RLD.DEFAULT Notify Receiver|I/O Exception caught while reading/writing from/to streams on PROXY_HELLOWORLD.DEFAULT: Connection reset, aborting...
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 15:19:23,918|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Failed to send close message from request sender 'PROXY_HELLOWORLD.DEFAULT-1'
+08-Dec-21 15:19:23,918|ERROR|L.kernel           |ORLD.DEFAULT Reply Receiver|Failure invoked by Data Adapter PROXY_HELLOWORLD.DEFAULT:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 15:19:23,918|ERROR|L.kernel           |RLD.DEFAULT Notify Receiver|Failure invoked by Data Adapter PROXY_HELLOWORLD.DEFAULT:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.fill(Unknown Source)
+	at java.io.BufferedReader.readLine(Unknown Source)
+	at java.io.LineNumberReader.readLine(Unknown Source)
+	at com.lightstreamer.adapters.proxy.request_reply.NotifyReceiver.run(NotifyReceiver.java:99)
+08-Dec-21 15:19:23,918|INFO |L.P.DEFAULT.sender |ORLD.DEFAULT Request Sender|Request sender 'PROXY_HELLOWORLD.DEFAULT-1' stopped
+08-Dec-21 15:19:23,918|FATAL|L.init             |ORLD.DEFAULT Reply Receiver|Failure in a Data Adapter.
+08-Dec-21 15:19:23,918|FATAL|L.init             |RLD.DEFAULT Notify Receiver|Failure in a Data Adapter.
+08-Dec-21 15:19:23,920|INFO |L.P.D.r.reply      |ORLD.DEFAULT Request Sender|Reply receiver 'PROXY_HELLOWORLD.DEFAULT-1' closed with reason: read error
+08-Dec-21 15:19:23,920|INFO |L.init             |LightstreamerShutdownHook  |Server shutdown requested.
+08-Dec-21 15:19:23,921|INFO |L.init             |LightstreamerShutdownHook  |Exiting.....
